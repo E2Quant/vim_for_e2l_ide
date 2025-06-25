@@ -1,0 +1,4530 @@
+{
+  "func": {
+    "prefix": "func",
+    "body": [
+      "#--------",
+      "# Name:function",
+      "#   Parameters:",
+      "# - arg1: xxx",
+      "# - arg2: xxx",
+      "# -> return ",
+      "# Description: ",
+      "#  ",
+      "#--------\t",
+      "func $1($2) {",
+      "\t$0",
+      "}",
+      "#----- func end"
+    ],
+    "description": "e2l's function"
+  },
+  "union": {
+    "prefix": "union",
+    "body": [
+      "#--------",
+      "# Name: union",
+      "# Description: ",
+      "#  ",
+      "#--------\t",
+      "union $1 {",
+      " arg=1;\t",
+      "}",
+      "#----- union end"
+    ],
+    "description": "e2l's union"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if () {",
+      "\t\t$0",
+      "}"
+    ],
+    "description": "e2l's if"
+  },
+  "ifelse": {
+    "prefix": "ifelse",
+    "body": [
+      "if () {",
+      "\t\t$0",
+      "}else{",
+      "}"
+    ],
+    "description": "e2l's if and else"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for (a=0;a<x;a++) {",
+      "\t\t$0",
+      "}"
+    ],
+    "description": "e2l's for"
+  },
+  "while": {
+    "prefix": "while",
+    "body": [
+      "while (a==1) {",
+      "\t\t$0",
+      "}"
+    ],
+    "description": "e2l's while"
+  },
+  "switch": {
+    "prefix": "switch",
+    "body": [
+      "switch (var) {",
+      "case a:",
+      "break;",
+      "default:",
+      "break;",
+      "}"
+    ],
+    "description": "e2l's switch"
+  },
+  "FGlobalUnion": {
+    "prefix": "FGlobalUnion",
+    "body": [
+      "FGlobalUnion();"
+    ],
+    "description": "e2l's FGlobalUnion"
+  },
+  "FVersion": {
+    "prefix": "FVersion",
+    "body": [
+      "FVersion();"
+    ],
+    "description": "e2l's FVersion"
+  },
+  "FAccountBalance": {
+    "prefix": "FAccountBalance",
+    "body": [
+      "FAccountBalance();"
+    ],
+    "description": "e2l's FAccountBalance"
+  },
+  "FAccountMargin": {
+    "prefix": "FAccountMargin",
+    "body": [
+      "FAccountMargin();"
+    ],
+    "description": "e2l's FAccountMargin"
+  },
+  "FAccountProfit": {
+    "prefix": "FAccountProfit",
+    "body": [
+      "FAccountProfit();"
+    ],
+    "description": "e2l's FAccountProfit"
+  },
+  "FAccountEquity": {
+    "prefix": "FAccountEquity",
+    "body": [
+      "FAccountEquity();"
+    ],
+    "description": "e2l's FAccountEquity"
+  },
+  "FThreadPosition": {
+    "prefix": "FThreadPosition",
+    "body": [
+      "FThreadPosition(thread_number, postion);"
+    ],
+    "description": "e2l's FThreadPosition"
+  },
+  "FIsInit": {
+    "prefix": "FIsInit",
+    "body": [
+      "FIsInit();"
+    ],
+    "description": "e2l's FIsInit"
+  },
+  "FFix": {
+    "prefix": "FFix",
+    "body": [
+      "FFix(path);"
+    ],
+    "description": "e2l's FFix"
+  },
+  "FMkType": {
+    "prefix": "FMkType",
+    "body": [
+      "FMkType(tick_bar);"
+    ],
+    "description": "e2l's FMkType"
+  },
+  "FMkCsv": {
+    "prefix": "FMkCsv",
+    "body": [
+      "FMkCsv(source, symbol);"
+    ],
+    "description": "e2l's FMkCsv"
+  },
+  "FMkkf": {
+    "prefix": "FMkkf",
+    "body": [
+      "FMkkf(source);"
+    ],
+    "description": "e2l's FMkkf"
+  },
+  "FTopicTick": {
+    "prefix": "FTopicTick",
+    "body": [
+      "FTopicTick(topic);"
+    ],
+    "description": "e2l's FTopicTick"
+  },
+  "FTopicLog": {
+    "prefix": "FTopicLog",
+    "body": [
+      "FTopicLog(log);"
+    ],
+    "description": "e2l's FTopicLog"
+  },
+  "FTFrame": {
+    "prefix": "FTFrame",
+    "body": [
+      "FTFrame(frame);"
+    ],
+    "description": "e2l's FTFrame"
+  },
+  "FDefTFrame": {
+    "prefix": "FDefTFrame",
+    "body": [
+      "FDefTFrame();"
+    ],
+    "description": "e2l's FDefTFrame"
+  },
+  "FIndex": {
+    "prefix": "FIndex",
+    "body": [
+      "FIndex();"
+    ],
+    "description": "e2l's FIndex"
+  },
+  "FOffers": {
+    "prefix": "FOffers",
+    "body": [
+      "FOffers(istick);"
+    ],
+    "description": "e2l's FOffers"
+  },
+  "FOfferTime": {
+    "prefix": "FOfferTime",
+    "body": [
+      "FOfferTime(time);"
+    ],
+    "description": "e2l's FOfferTime"
+  },
+  "FCommission": {
+    "prefix": "FCommission",
+    "body": [
+      "FCommission(cms, ccy);"
+    ],
+    "description": "e2l's FCommission"
+  },
+  "FQuantId": {
+    "prefix": "FQuantId",
+    "body": [
+      "FQuantId(qid);"
+    ],
+    "description": "e2l's FQuantId"
+  },
+  "FGenerateQuantId": {
+    "prefix": "FGenerateQuantId",
+    "body": [
+      "FGenerateQuantId();"
+    ],
+    "description": "e2l's FGenerateQuantId"
+  },
+  "FCurrentQuantId": {
+    "prefix": "FCurrentQuantId",
+    "body": [
+      "FCurrentQuantId();"
+    ],
+    "description": "e2l's FCurrentQuantId"
+  },
+  "FQuantVersion": {
+    "prefix": "FQuantVersion",
+    "body": [
+      "FQuantVersion(major,minor,patch);"
+    ],
+    "description": "e2l's FQuantVersion"
+  },
+  "FTradeTime": {
+    "prefix": "FTradeTime",
+    "body": [
+      "FTradeTime(open_hour,open_minute,close_hour,close_minute);"
+    ],
+    "description": "e2l's FTradeTime"
+  },
+  "FTradeMode": {
+    "prefix": "FTradeMode",
+    "body": [
+      "FTradeMode(USymbolTradeMode::M_CloseOnly);"
+    ],
+    "description": "e2l's FTradeMode"
+  },
+  "FGmt": {
+    "prefix": "FGmt",
+    "body": [
+      "FGmt();"
+    ],
+    "description": "e2l's FGmt"
+  },
+  "FLotAndShare": {
+    "prefix": "FLotAndShare",
+    "body": [
+      "FLotAndShare(lot);"
+    ],
+    "description": "e2l's FLotAndShare"
+  },
+  "FCurrentLS": {
+    "prefix": "FCurrentLS",
+    "body": [
+      "FCurrentLS();"
+    ],
+    "description": "e2l's FCurrentLS"
+  },
+  "FOrderTicket": {
+    "prefix": "FOrderTicket",
+    "body": [
+      "FOrderTicket();"
+    ],
+    "description": "e2l's FOrderTicket"
+  },
+  "FOrderSelect": {
+    "prefix": "FOrderSelect",
+    "body": [
+      "FOrderSelect(index,select,pool);"
+    ],
+    "description": "e2l's FOrderSelect"
+  },
+  "FOrderComment": {
+    "prefix": "FOrderComment",
+    "body": [
+      "FOrderComment(ticket,side, cmt);"
+    ],
+    "description": "e2l's FOrderComment"
+  },
+  "FOrderClose": {
+    "prefix": "FOrderClose",
+    "body": [
+      "FOrderClose(ticket,lost,stoppx,slippage);"
+    ],
+    "description": "e2l's FOrderClose"
+  },
+  "FOrderSend": {
+    "prefix": "FOrderSend",
+    "body": [
+      "FOrderSend(symbol,side,qty,price,slippage,ordtype);"
+    ],
+    "description": "e2l's FOrderSend"
+  },
+  "FOrdersTotal": {
+    "prefix": "FOrdersTotal",
+    "body": [
+      "FOrdersTotal();"
+    ],
+    "description": "e2l's FOrdersTotal"
+  },
+  "FOrdersHistoryTotal": {
+    "prefix": "FOrdersHistoryTotal",
+    "body": [
+      "FOrdersHistoryTotal();"
+    ],
+    "description": "e2l's FOrdersHistoryTotal"
+  },
+  "FOrderLots": {
+    "prefix": "FOrderLots",
+    "body": [
+      "FOrderLots(ticket)"
+    ],
+    "description": "e2l's FOrderLots"
+  },
+  "FOrderOpenPrice": {
+    "prefix": "FOrderOpenPrice",
+    "body": [
+      "FOrderOpenPrice(ticket, bool);"
+    ],
+    "description": "e2l's FOrderOpenPrice"
+  },
+  "FAnalysis": {
+    "prefix": "FAnalysis",
+    "body": [
+      "FAnalysis(qid,analy );"
+    ],
+    "description": "e2l's FAnalysis"
+  },
+  "FAnalyTotal": {
+    "prefix": "FAnalyTotal",
+    "body": [
+      "FAnalyTotal(analy);"
+    ],
+    "description": "e2l's FAnalyTotal"
+  },
+  "FAnalse": {
+    "prefix": "FAnalse",
+    "body": [
+      "FAnalse(id, name);"
+    ],
+    "description": "e2l's FAnalse"
+  },
+  "FAnalseArgv": {
+    "prefix": "FAnalseArgv",
+    "body": [
+      "FAnalseArgv(id, args);"
+    ],
+    "description": "e2l's FAnalseArgv"
+  },
+  "FAnalseValue": {
+    "prefix": "FAnalseValue",
+    "body": [
+      "FAnalseValue(id,value);"
+    ],
+    "description": "e2l's FAnalseValue"
+  },
+  "FAnalseDB": {
+    "prefix": "FAnalseDB",
+    "body": [
+      "FAnalseDB();"
+    ],
+    "description": "e2l's FAnalseDB"
+  },
+  "FAnalseLog": {
+    "prefix": "FAnalseLog",
+    "body": [
+      "FAnalseLog(key, value, idx,time);"
+    ],
+    "description": "e2l's FAnalseLog"
+  },
+  "FSetCash": {
+    "prefix": "FSetCash",
+    "body": [
+      "FSetCash(cash);"
+    ],
+    "description": "e2l's FSetCash"
+  },
+  "FGetCash": {
+    "prefix": "FGetCash",
+    "body": [
+      "FGetCash();"
+    ],
+    "description": "e2l's FGetCash"
+  },
+  "FSettlInst": {
+    "prefix": "FSettlInst",
+    "body": [
+      "FSettlInst(settlemode);"
+    ],
+    "description": "e2l's FSettlInst"
+  },
+  "FTimeInForce": {
+    "prefix": "FTimeInForce",
+    "body": [
+      "FTimeInForce(timeinforce);"
+    ],
+    "description": "e2l's FTimeInForce"
+  },
+  "FMarginRate": {
+    "prefix": "FMarginRate",
+    "body": [
+      "FMarginRate(rate);"
+    ],
+    "description": "e2l's FMarginRate"
+  },
+  "FMatchEventInit": {
+    "prefix": "FMatchEventInit",
+    "body": [
+      "FMatchEventInit(match);"
+    ],
+    "description": "e2l's FMatchEventInit"
+  },
+  "FExdividendEnable": {
+    "prefix": "FExdividendEnable",
+    "body": [
+      "FExdividendEnable(bool);"
+    ],
+    "description": "e2l's FExdividendEnable"
+  },
+  "FExDivPrice": {
+    "prefix": "FExDivPrice",
+    "body": [
+      "FExDivPrice(cfi_code);"
+    ],
+    "description": "e2l's FExDivPrice"
+  },
+  "FExDividendSize": {
+    "prefix": "FExDividendSize",
+    "body": [
+      "FExDividendSize(cfi_code);"
+    ],
+    "description": "e2l's FExDividendSize"
+  },
+  "FExDividendDate": {
+    "prefix": "FExDividendDate",
+    "body": [
+      "FExDividendDate(cfi_code,idx);"
+    ],
+    "description": "e2l's FExDividendDate"
+  },
+  "FExDividendCash": {
+    "prefix": "FExDividendCash",
+    "body": [
+      "FExDividendCash(cfi_code,idx);"
+    ],
+    "description": "e2l's FExDividendCash"
+  },
+  "FExDividendShare": {
+    "prefix": "FExDividendShare",
+    "body": [
+      "FExDividendShare(cfi_code,idx);"
+    ],
+    "description": "e2l's FExDividendShare"
+  },
+  "FBrokerBook": {
+    "prefix": "FBrokerBook",
+    "body": [
+      "FBrokerBook(booktype);"
+    ],
+    "description": "e2l's FBrokerBook"
+  },
+  "log": {
+    "prefix": "log",
+    "body": [
+      "log(value);"
+    ],
+    "description": "e2l's log"
+  },
+  "FPrintLine": {
+    "prefix": "FPrintLine",
+    "body": [
+      "FPrintLine(value);"
+    ],
+    "description": "e2l's FPrintLine"
+  },
+  "FPrintDeci": {
+    "prefix": "FPrintDeci",
+    "body": [
+      "FPrintDeci(value,deci);"
+    ],
+    "description": "e2l's FPrintDeci"
+  },
+  "FPrintTime": {
+    "prefix": "FPrintTime",
+    "body": [
+      "FPrintTime(value);"
+    ],
+    "description": "e2l's FPrintTime"
+  },
+  "FStoreId": {
+    "prefix": "FStoreId",
+    "body": [
+      "FStoreId();"
+    ],
+    "description": "e2l's FStoreId"
+  },
+  "FFetch": {
+    "prefix": "FFetch",
+    "body": [
+      "FFetch(id);"
+    ],
+    "description": "e2l's FFetch"
+  },
+  "FStore": {
+    "prefix": "FStore",
+    "body": [
+      "FStore(id, value);"
+    ],
+    "description": "e2l's FStore"
+  },
+  "FTicketSize": {
+    "prefix": "FTicketSize",
+    "body": [
+      "FTicketSize();"
+    ],
+    "description": "e2l's FTicketSize"
+  },
+  "FLast": {
+    "prefix": "FLast",
+    "body": [
+      "FLast(id);"
+    ],
+    "description": "e2l's FLast"
+  },
+  "FArray": {
+    "prefix": "FArray",
+    "body": [
+      "FArray(id, size);"
+    ],
+    "description": "e2l's FArray"
+  },
+  "FArrayFixed": {
+    "prefix": "FArrayFixed",
+    "body": [
+      "FArrayFixed(id);"
+    ],
+    "description": "e2l's FArrayFixed"
+  },
+  "FArrayShare": {
+    "prefix": "FArrayShare",
+    "body": [
+      "FArrayShare(id);"
+    ],
+    "description": "e2l's FArrayShare"
+  },
+  "FArrayAdd": {
+    "prefix": "FArrayAdd",
+    "body": [
+      "FArrayAdd(id, value);"
+    ],
+    "description": "e2l's FArrayAdd"
+  },
+  "FArrayUpdate": {
+    "prefix": "FArrayUpdate",
+    "body": [
+      "FArrayUpdate(id, index, value);"
+    ],
+    "description": "e2l's FArrayUpdate"
+  },
+  "FArrayGet": {
+    "prefix": "FArrayGet",
+    "body": [
+      "FArrayGet(id,index);"
+    ],
+    "description": "e2l's FArrayGet"
+  },
+  "FArrayFill": {
+    "prefix": "FArrayFill",
+    "body": [
+      "FArrayFill(id, value);"
+    ],
+    "description": "e2l's FArrayFill"
+  },
+  "FArrayLast": {
+    "prefix": "FArrayLast",
+    "body": [
+      "FArrayLast(id);"
+    ],
+    "description": "e2l's FArrayLast"
+  },
+  "FArrayLength": {
+    "prefix": "FArrayLength",
+    "body": [
+      "FArrayLength(id);"
+    ],
+    "description": "e2l's FArrayLength"
+  },
+  "FArraySize": {
+    "prefix": "FArraySize",
+    "body": [
+      "FArraySize(id);"
+    ],
+    "description": "e2l's FArraySize"
+  },
+  "FArrayMax": {
+    "prefix": "FArrayMax",
+    "body": [
+      "FArrayMax(id);"
+    ],
+    "description": "e2l's FArrayMax"
+  },
+  "FArrayMin": {
+    "prefix": "FArrayMin",
+    "body": [
+      "FArrayMin(id);"
+    ],
+    "description": "e2l's FArrayMin"
+  },
+  "FArraySum": {
+    "prefix": "FArraySum",
+    "body": [
+      "FArraySum(id,idx);"
+    ],
+    "description": "e2l's FArraySum"
+  },
+  "FMax": {
+    "prefix": "FMax",
+    "body": [
+      "FMax(val1, val2);"
+    ],
+    "description": "e2l's FMax"
+  },
+  "FMin": {
+    "prefix": "FMin",
+    "body": [
+      "FMin(val1, val2);"
+    ],
+    "description": "e2l's FMin"
+  },
+  "FMaxs": {
+    "prefix": "FMaxs",
+    "body": [
+      "FMaxs(val1, val2, val3);"
+    ],
+    "description": "e2l's FMaxs"
+  },
+  "FMins": {
+    "prefix": "FMins",
+    "body": [
+      "FMins(val1, val2, val3);"
+    ],
+    "description": "e2l's FMins"
+  },
+  "FBetween": {
+    "prefix": "FBetween",
+    "body": [
+      "FBetween(val, start, end);"
+    ],
+    "description": "e2l's FBetween"
+  },
+  "FSqrt": {
+    "prefix": "FSqrt",
+    "body": [
+      "FSqrt(value);"
+    ],
+    "description": "e2l's FSqrt"
+  },
+  "FStdev": {
+    "prefix": "FStdev",
+    "body": [
+      "FStdev(id);"
+    ],
+    "description": "e2l's FStdev"
+  },
+  "FAbs": {
+    "prefix": "FAbs",
+    "body": [
+      "FAbs(value);"
+    ],
+    "description": "e2l's FAbs"
+  },
+  "FCeil": {
+    "prefix": "FCeil",
+    "body": [
+      "FCeil(value);"
+    ],
+    "description": "e2l's FCeil"
+  },
+  "FFloor": {
+    "prefix": "FFloor",
+    "body": [
+      "FFloor(value);"
+    ],
+    "description": "e2l's FFloor"
+  },
+  "FCFICode": {
+    "prefix": "FCFICode",
+    "body": [
+      "FCFICode(idx);"
+    ],
+    "description": "e2l's FCFICode"
+  },
+  "FSymbols": {
+    "prefix": "FSymbols",
+    "body": [
+      "FSymbols();"
+    ],
+    "description": "e2l's FSymbols"
+  },
+  "FSymbol": {
+    "prefix": "FSymbol",
+    "body": [
+      "FSymbol(symbol);"
+    ],
+    "description": "e2l's FSymbol"
+  },
+  "FSettlement": {
+    "prefix": "FSettlement",
+    "body": [
+      "FSettlement(value);"
+    ],
+    "description": "e2l's FSettlement"
+  },
+  "FOpen": {
+    "prefix": "FOpen",
+    "body": [
+      "FOpen(cfi_id, timeframe, shift);"
+    ],
+    "description": "e2l's FOpen"
+  },
+  "FHigh": {
+    "prefix": "FHigh",
+    "body": [
+      "FHigh(cfi_id, timeframe, shift);"
+    ],
+    "description": "e2l's FHigh"
+  },
+  "FLow": {
+    "prefix": "FLow",
+    "body": [
+      "FLow(cfi_id, timeframe, shift);"
+    ],
+    "description": "e2l's FLow"
+  },
+  "FClose": {
+    "prefix": "FClose",
+    "body": [
+      "FClose(cfi_id, timeframe, shift);"
+    ],
+    "description": "e2l's FClose"
+  },
+  "FVolume": {
+    "prefix": "FVolume",
+    "body": [
+      "FVolume(cfi_id, timeframe, shift);"
+    ],
+    "description": "e2l's FVolume"
+  },
+  "FTime": {
+    "prefix": "FTime",
+    "body": [
+      "FTime(cfi_id, timeframe, shift);"
+    ],
+    "description": "e2l's FTime"
+  },
+  "FAdjClose": {
+    "prefix": "FAdjClose",
+    "body": [
+      "FAdjClose(cfi_id, timeframe, shift);"
+    ],
+    "description": "e2l's FAdjClose"
+  },
+  "FVolumeAppend": {
+    "prefix": "FVolumeAppend",
+    "body": [
+      "FVolumeAppend();"
+    ],
+    "description": "e2l's FVolumeAppend"
+  },
+  "FOnOpen": {
+    "prefix": "FOnOpen",
+    "body": [
+      "FOnOpen();"
+    ],
+    "description": "e2l's FOnOpen"
+  },
+  "FBarSize": {
+    "prefix": "FBarSize",
+    "body": [
+      "FBarSize(cfi_id, timeframe);"
+    ],
+    "description": "e2l's FBarSize"
+  },
+  "FBar": {
+    "prefix": "FBar",
+    "body": [
+      "FBar(cfi_id, timeframe, shift);"
+    ],
+    "description": "e2l's FBar"
+  },
+  "FBarSeries": {
+    "prefix": "FBarSeries",
+    "body": [
+      "FBarSeries(bartype);"
+    ],
+    "description": "e2l's FBarSeries"
+  },
+  "FExdiDate": {
+    "prefix": "FExdiDate",
+    "body": [
+      "FExdiDate(cfi_id);"
+    ],
+    "description": "e2l's FExdiDate"
+  },
+  "FExdiCash": {
+    "prefix": "FExdiCash",
+    "body": [
+      "FExdiCash(cfi_id);"
+    ],
+    "description": "e2l's FExdiCash"
+  },
+  "FExdiShare": {
+    "prefix": "FExdiShare",
+    "body": [
+      "FExdiShare(cfi_id);"
+    ],
+    "description": "e2l's FExdiShare"
+  },
+  "FCustomDataSize": {
+    "prefix": "FCustomDataSize",
+    "body": [
+      "FCustomDataSize(cfi_id, idx);"
+    ],
+    "description": "e2l's FCustomDataSize"
+  },
+  "FCustomDataGet": {
+    "prefix": "FCustomDataGet",
+    "body": [
+      "FCustomDataGet(cfi_id, idx, pos);"
+    ],
+    "description": "e2l's FCustomDataGet"
+  },
+  "FGiveaway": {
+    "prefix": "FGiveaway",
+    "body": [
+      "FGiveaway();"
+    ],
+    "description": "e2l's FGiveaway"
+  },
+  "FTimeCurrent": {
+    "prefix": "FTimeCurrent",
+    "body": [
+      "FTimeCurrent();"
+    ],
+    "description": "e2l's FTimeCurrent"
+  },
+  "FTimeLocal": {
+    "prefix": "FTimeLocal",
+    "body": [
+      "FTimeLocal();"
+    ],
+    "description": "e2l's FTimeLocal"
+  },
+  "FClock": {
+    "prefix": "FClock",
+    "body": [
+      "FClock();"
+    ],
+    "description": "e2l's FClock"
+  },
+  "FThread": {
+    "prefix": "FThread",
+    "body": [
+      "FThread( number);"
+    ],
+    "description": "e2l's FThread"
+  },
+  "FProcessId": {
+    "prefix": "FProcessId",
+    "body": [
+      "FProcessId();"
+    ],
+    "description": "e2l's FProcessId"
+  },
+  "FProcessRuns": {
+    "prefix": "FProcessRuns",
+    "body": [
+      "FProcessRuns();"
+    ],
+    "description": "e2l's FProcessRuns"
+  },
+  "FThreadId": {
+    "prefix": "FThreadId",
+    "body": [
+      "FThreadId();"
+    ],
+    "description": "e2l's FThreadId"
+  },
+  "FTypeOf": {
+    "prefix": "FTypeOf",
+    "body": [
+      "FTypeOf(fun);"
+    ],
+    "description": "e2l's FTypeOf"
+  },
+  "FApiList": {
+    "prefix": "FApiList",
+    "body": [
+      "FApiList();"
+    ],
+    "description": "e2l's FApiList"
+  },
+  "FSymbolUnion": {
+    "prefix": "FSymbolUnion",
+    "body": [
+      "FSymbolUnion();"
+    ],
+    "description": "e2l's FSymbolUnion"
+  },
+  "quant_ha_enter": {
+    "prefix": "quant_ha_enter",
+    "body": [
+      "ha_enter.e2>"
+    ],
+    "description": "e2l's ha_enter.e2"
+  },
+  "quant_Config_indicator": {
+    "prefix": "quant_Config_indicator",
+    "body": [
+      "Config/indicator.e2>"
+    ],
+    "description": "e2l's Config/indicator.e2"
+  },
+  "quant_Config_iunion": {
+    "prefix": "quant_Config_iunion",
+    "body": [
+      "Config/iunion.e2>"
+    ],
+    "description": "e2l's Config/iunion.e2"
+  },
+  "quant_Config_StaticStoreId": {
+    "prefix": "quant_Config_StaticStoreId",
+    "body": [
+      "Config/StaticStoreId.e2>"
+    ],
+    "description": "e2l's Config/StaticStoreId.e2"
+  },
+  "quant_Config_common": {
+    "prefix": "quant_Config_common",
+    "body": [
+      "Config/common.e2>"
+    ],
+    "description": "e2l's Config/common.e2"
+  },
+  "quant_Config_fix": {
+    "prefix": "quant_Config_fix",
+    "body": [
+      "Config/fix.e2>"
+    ],
+    "description": "e2l's Config/fix.e2"
+  },
+  "quant_boll_rsi": {
+    "prefix": "quant_boll_rsi",
+    "body": [
+      "boll_rsi.e2>"
+    ],
+    "description": "e2l's boll_rsi.e2"
+  },
+  "quant_Indicators_Talib_talib": {
+    "prefix": "quant_Indicators_Talib_talib",
+    "body": [
+      "Indicators/Talib/talib.e2>"
+    ],
+    "description": "e2l's Indicators/Talib/talib.e2"
+  },
+  "quant_Indicators_Momentum_ROC": {
+    "prefix": "quant_Indicators_Momentum_ROC",
+    "body": [
+      "Indicators/Momentum/ROC.e2>"
+    ],
+    "description": "e2l's Indicators/Momentum/ROC.e2"
+  },
+  "quant_Indicators_Momentum_MACD": {
+    "prefix": "quant_Indicators_Momentum_MACD",
+    "body": [
+      "Indicators/Momentum/MACD.e2>"
+    ],
+    "description": "e2l's Indicators/Momentum/MACD.e2"
+  },
+  "quant_Indicators_Momentum_RSI": {
+    "prefix": "quant_Indicators_Momentum_RSI",
+    "body": [
+      "Indicators/Momentum/RSI.e2>"
+    ],
+    "description": "e2l's Indicators/Momentum/RSI.e2"
+  },
+  "quant_Indicators_Momentum_STOCH": {
+    "prefix": "quant_Indicators_Momentum_STOCH",
+    "body": [
+      "Indicators/Momentum/STOCH.e2>"
+    ],
+    "description": "e2l's Indicators/Momentum/STOCH.e2"
+  },
+  "quant_Indicators_Momentum_Itrend": {
+    "prefix": "quant_Indicators_Momentum_Itrend",
+    "body": [
+      "Indicators/Momentum/Itrend.e2>"
+    ],
+    "description": "e2l's Indicators/Momentum/Itrend.e2"
+  },
+  "quant_Indicators_Volatility_TDI": {
+    "prefix": "quant_Indicators_Volatility_TDI",
+    "body": [
+      "Indicators/Volatility/TDI.e2>"
+    ],
+    "description": "e2l's Indicators/Volatility/TDI.e2"
+  },
+  "quant_Indicators_Math_cross": {
+    "prefix": "quant_Indicators_Math_cross",
+    "body": [
+      "Indicators/Math/cross.e2>"
+    ],
+    "description": "e2l's Indicators/Math/cross.e2"
+  },
+  "quant_Indicators_Math_Extreme": {
+    "prefix": "quant_Indicators_Math_Extreme",
+    "body": [
+      "Indicators/Math/Extreme.e2>"
+    ],
+    "description": "e2l's Indicators/Math/Extreme.e2"
+  },
+  "quant_Indicators_Math_Fibonacci": {
+    "prefix": "quant_Indicators_Math_Fibonacci",
+    "body": [
+      "Indicators/Math/Fibonacci.e2>"
+    ],
+    "description": "e2l's Indicators/Math/Fibonacci.e2"
+  },
+  "quant_Indicators_OverlapStudies_MA": {
+    "prefix": "quant_Indicators_OverlapStudies_MA",
+    "body": [
+      "Indicators/OverlapStudies/MA.e2>"
+    ],
+    "description": "e2l's Indicators/OverlapStudies/MA.e2"
+  },
+  "quant_Indicators_OverlapStudies_Bollinger": {
+    "prefix": "quant_Indicators_OverlapStudies_Bollinger",
+    "body": [
+      "Indicators/OverlapStudies/Bollinger.e2>"
+    ],
+    "description": "e2l's Indicators/OverlapStudies/Bollinger.e2"
+  },
+  "quant_Indicators_Candlesticker_BasicCandlesticks": {
+    "prefix": "quant_Indicators_Candlesticker_BasicCandlesticks",
+    "body": [
+      "Indicators/Candlesticker/BasicCandlesticks.e2>"
+    ],
+    "description": "e2l's Indicators/Candlesticker/BasicCandlesticks.e2"
+  },
+  "quant_Indicators_Candlesticker_CandlesUnion": {
+    "prefix": "quant_Indicators_Candlesticker_CandlesUnion",
+    "body": [
+      "Indicators/Candlesticker/CandlesUnion.e2>"
+    ],
+    "description": "e2l's Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "quant_Physical_ModeConfig_punion": {
+    "prefix": "quant_Physical_ModeConfig_punion",
+    "body": [
+      "Physical/ModeConfig/punion.e2>"
+    ],
+    "description": "e2l's Physical/ModeConfig/punion.e2"
+  },
+  "quant_Physical_Mode_ModeHA": {
+    "prefix": "quant_Physical_Mode_ModeHA",
+    "body": [
+      "Physical/Mode/ModeHA.e2>"
+    ],
+    "description": "e2l's Physical/Mode/ModeHA.e2"
+  },
+  "quant_Physical_Mode_ModeMa": {
+    "prefix": "quant_Physical_Mode_ModeMa",
+    "body": [
+      "Physical/Mode/ModeMa.e2>"
+    ],
+    "description": "e2l's Physical/Mode/ModeMa.e2"
+  },
+  "quant_Physical_Mode_ModeMACD": {
+    "prefix": "quant_Physical_Mode_ModeMACD",
+    "body": [
+      "Physical/Mode/ModeMACD.e2>"
+    ],
+    "description": "e2l's Physical/Mode/ModeMACD.e2"
+  },
+  "quant_Physical_Mode_ModeBoll": {
+    "prefix": "quant_Physical_Mode_ModeBoll",
+    "body": [
+      "Physical/Mode/ModeBoll.e2>"
+    ],
+    "description": "e2l's Physical/Mode/ModeBoll.e2"
+  },
+  "quant_Physical_Mode_BollRsi": {
+    "prefix": "quant_Physical_Mode_BollRsi",
+    "body": [
+      "Physical/Mode/BollRsi.e2>"
+    ],
+    "description": "e2l's Physical/Mode/BollRsi.e2"
+  },
+  "quant_Physical_Mode_ModeTA": {
+    "prefix": "quant_Physical_Mode_ModeTA",
+    "body": [
+      "Physical/Mode/ModeTA.e2>"
+    ],
+    "description": "e2l's Physical/Mode/ModeTA.e2"
+  },
+  "quant_Physical_Mode_ModeTDI": {
+    "prefix": "quant_Physical_Mode_ModeTDI",
+    "body": [
+      "Physical/Mode/ModeTDI.e2>"
+    ],
+    "description": "e2l's Physical/Mode/ModeTDI.e2"
+  },
+  "quant_Physical_ModeGuide_ThreadProcess": {
+    "prefix": "quant_Physical_ModeGuide_ThreadProcess",
+    "body": [
+      "Physical/ModeGuide/ThreadProcess.e2>"
+    ],
+    "description": "e2l's Physical/ModeGuide/ThreadProcess.e2"
+  },
+  "quant_Physical_ModeGuide_ReportAnalyse": {
+    "prefix": "quant_Physical_ModeGuide_ReportAnalyse",
+    "body": [
+      "Physical/ModeGuide/ReportAnalyse.e2>"
+    ],
+    "description": "e2l's Physical/ModeGuide/ReportAnalyse.e2"
+  },
+  "quant_lab_enter": {
+    "prefix": "quant_lab_enter",
+    "body": [
+      "lab_enter.e2>"
+    ],
+    "description": "e2l's lab_enter.e2"
+  },
+  "quant_btc_usdt": {
+    "prefix": "quant_btc_usdt",
+    "body": [
+      "btc_usdt.e2>"
+    ],
+    "description": "e2l's btc_usdt.e2"
+  },
+  "quant_macd_opt": {
+    "prefix": "quant_macd_opt",
+    "body": [
+      "macd_opt.e2>"
+    ],
+    "description": "e2l's macd_opt.e2"
+  },
+  "quant_tdi_enter": {
+    "prefix": "quant_tdi_enter",
+    "body": [
+      "tdi_enter.e2>"
+    ],
+    "description": "e2l's tdi_enter.e2"
+  },
+  "quant_ChartType_HeikinAshi": {
+    "prefix": "quant_ChartType_HeikinAshi",
+    "body": [
+      "ChartType/HeikinAshi.e2>"
+    ],
+    "description": "e2l's ChartType/HeikinAshi.e2"
+  },
+  "quant_macd_enter": {
+    "prefix": "quant_macd_enter",
+    "body": [
+      "macd_enter.e2>"
+    ],
+    "description": "e2l's macd_enter.e2"
+  },
+  "quant_ma_enter": {
+    "prefix": "quant_ma_enter",
+    "body": [
+      "ma_enter.e2>"
+    ],
+    "description": "e2l's ma_enter.e2"
+  },
+  "quant_control_Order": {
+    "prefix": "quant_control_Order",
+    "body": [
+      "control/Order.e2>"
+    ],
+    "description": "e2l's control/Order.e2"
+  },
+  "quant_control_defined": {
+    "prefix": "quant_control_defined",
+    "body": [
+      "control/defined.e2>"
+    ],
+    "description": "e2l's control/defined.e2"
+  },
+  "quant_mboll_enter": {
+    "prefix": "quant_mboll_enter",
+    "body": [
+      "mboll_enter.e2>"
+    ],
+    "description": "e2l's mboll_enter.e2"
+  },
+  "oms_oms": {
+    "prefix": "oms_oms",
+    "body": [
+      "oms.e2>"
+    ],
+    "description": "e2l's oms.e2"
+  },
+  "oms_main": {
+    "prefix": "oms_main",
+    "body": [
+      "main.e2>"
+    ],
+    "description": "e2l's main.e2"
+  },
+  "oms_risk": {
+    "prefix": "oms_risk",
+    "body": [
+      "risk.e2>"
+    ],
+    "description": "e2l's risk.e2"
+  },
+  "HAEvent": {
+    "prefix": "HAEvent",
+    "body": [
+      " HAEvent(thread_id, adj_close, pre_close,time, event) ;"
+    ],
+    "description": "e2l's script  HAEvent(thread_id, adj_close, pre_close,time, event) ,\t\n  ./quant/ha_enter.e2"
+  },
+  "hakin_enter": {
+    "prefix": "hakin_enter",
+    "body": [
+      " hakin_enter(tick_size, thread_id) ;"
+    ],
+    "description": "e2l's script  hakin_enter(tick_size, thread_id) ,\t\n  ./quant/ha_enter.e2"
+  },
+  "IndSig": {
+    "prefix": "IndSig",
+    "body": [
+      " IndSig(current_close, size);"
+    ],
+    "description": "e2l's script  IndSig(current_close, size),\t\n  ./quant/Config/indicator.e2"
+  },
+  "BarUpdate": {
+    "prefix": "BarUpdate",
+    "body": [
+      " BarUpdate(val);"
+    ],
+    "description": "e2l's script  BarUpdate(val),\t\n  ./quant/Config/common.e2"
+  },
+  "BarTimeFrame": {
+    "prefix": "BarTimeFrame",
+    "body": [
+      " BarTimeFrame( tt ) ;"
+    ],
+    "description": "e2l's script  BarTimeFrame( tt ) ,\t\n  ./quant/Config/common.e2"
+  },
+  "InitTFrame": {
+    "prefix": "InitTFrame",
+    "body": [
+      " InitTFrame(tick_size) ;"
+    ],
+    "description": "e2l's script  InitTFrame(tick_size) ,\t\n  ./quant/Config/common.e2"
+  },
+  "CurrentTFrame": {
+    "prefix": "CurrentTFrame",
+    "body": [
+      " CurrentTFrame() ;"
+    ],
+    "description": "e2l's script  CurrentTFrame() ,\t\n  ./quant/Config/common.e2"
+  },
+  "PFrame": {
+    "prefix": "PFrame",
+    "body": [
+      " PFrame();"
+    ],
+    "description": "e2l's script  PFrame(),\t\n  ./quant/Config/common.e2"
+  },
+  "Ref": {
+    "prefix": "Ref",
+    "body": [
+      " Ref(value, shift) ;"
+    ],
+    "description": "e2l's script  Ref(value, shift) ,\t\n  ./quant/Config/common.e2"
+  },
+  "RefId": {
+    "prefix": "RefId",
+    "body": [
+      " RefId(value, size) ;"
+    ],
+    "description": "e2l's script  RefId(value, size) ,\t\n  ./quant/Config/common.e2"
+  },
+  "RefVal": {
+    "prefix": "RefVal",
+    "body": [
+      " RefVal(id, shift) ;"
+    ],
+    "description": "e2l's script  RefVal(id, shift) ,\t\n  ./quant/Config/common.e2"
+  },
+  "LatelyMin": {
+    "prefix": "LatelyMin",
+    "body": [
+      " LatelyMin(coef, price) ;"
+    ],
+    "description": "e2l's script  LatelyMin(coef, price) ,\t\n  ./quant/Config/common.e2"
+  },
+  "LatelyMax": {
+    "prefix": "LatelyMax",
+    "body": [
+      " LatelyMax(coef, price) ;"
+    ],
+    "description": "e2l's script  LatelyMax(coef, price) ,\t\n  ./quant/Config/common.e2"
+  },
+  "CheckMacd": {
+    "prefix": "CheckMacd",
+    "body": [
+      " CheckMacd(pid) ;"
+    ],
+    "description": "e2l's script  CheckMacd(pid) ,\t\n  ./quant/Config/common.e2"
+  },
+  "CfiCode": {
+    "prefix": "CfiCode",
+    "body": [
+      " CfiCode() ;"
+    ],
+    "description": "e2l's script  CfiCode() ,\t\n  ./quant/Config/common.e2"
+  },
+  "Postion": {
+    "prefix": "Postion",
+    "body": [
+      " Postion() ;"
+    ],
+    "description": "e2l's script  Postion() ,\t\n  ./quant/Config/fix.e2"
+  },
+  "ProcCfi": {
+    "prefix": "ProcCfi",
+    "body": [
+      " ProcCfi(process_id) ;"
+    ],
+    "description": "e2l's script  ProcCfi(process_id) ,\t\n  ./quant/Config/fix.e2"
+  },
+  "ea_config": {
+    "prefix": "ea_config",
+    "body": [
+      " ea_config();"
+    ],
+    "description": "e2l's script  ea_config(),\t\n  ./quant/Config/fix.e2"
+  },
+  "TestTimeFrame": {
+    "prefix": "TestTimeFrame",
+    "body": [
+      " TestTimeFrame();"
+    ],
+    "description": "e2l's script  TestTimeFrame(),\t\n  ./quant/Config/fix.e2"
+  },
+  "BrEvent": {
+    "prefix": "BrEvent",
+    "body": [
+      " BrEvent(thread_id, now_close, next_close,event) ;"
+    ],
+    "description": "e2l's script  BrEvent(thread_id, now_close, next_close,event) ,\t\n  ./quant/boll_rsi.e2"
+  },
+  "br_enter": {
+    "prefix": "br_enter",
+    "body": [
+      " br_enter(tick_size, thread_id) ;"
+    ],
+    "description": "e2l's script  br_enter(tick_size, thread_id) ,\t\n  ./quant/boll_rsi.e2"
+  },
+  "bbands": {
+    "prefix": "bbands",
+    "body": [
+      " bbands();"
+    ],
+    "description": "e2l's script  bbands(),\t\n  ./quant/Indicators/Talib/talib.e2"
+  },
+  "ita_ma": {
+    "prefix": "ita_ma",
+    "body": [
+      " ita_ma(timeperiod, real );"
+    ],
+    "description": "e2l's script  ita_ma(timeperiod, real ),\t\n  ./quant/Indicators/Talib/talib.e2"
+  },
+  "ita_ema": {
+    "prefix": "ita_ema",
+    "body": [
+      " ita_ema(timeperiod, real );"
+    ],
+    "description": "e2l's script  ita_ema(timeperiod, real ),\t\n  ./quant/Indicators/Talib/talib.e2"
+  },
+  "ita_macd": {
+    "prefix": "ita_macd",
+    "body": [
+      " ita_macd(real);"
+    ],
+    "description": "e2l's script  ita_macd(real),\t\n  ./quant/Indicators/Talib/talib.e2"
+  },
+  "ita_cdl2crows": {
+    "prefix": "ita_cdl2crows",
+    "body": [
+      " ita_cdl2crows( cficode, timeframe ) ;"
+    ],
+    "description": "e2l's script  ita_cdl2crows( cficode, timeframe ) ,\t\n  ./quant/Indicators/Talib/talib.e2"
+  },
+  "roc": {
+    "prefix": "roc",
+    "body": [
+      " roc();"
+    ],
+    "description": "e2l's script  roc(),\t\n  ./quant/Indicators/Momentum/ROC.e2"
+  },
+  "MACD": {
+    "prefix": "MACD",
+    "body": [
+      " MACD(fast, slow, signal, value);"
+    ],
+    "description": "e2l's script  MACD(fast, slow, signal, value),\t\n  ./quant/Indicators/Momentum/MACD.e2"
+  },
+  "Average": {
+    "prefix": "Average",
+    "body": [
+      " Average(timeperiod, value) ;"
+    ],
+    "description": "e2l's script  Average(timeperiod, value) ,\t\n  ./quant/Indicators/Momentum/RSI.e2"
+  },
+  "RSI": {
+    "prefix": "RSI",
+    "body": [
+      " RSI(timeperiod , current_value, pre_value);"
+    ],
+    "description": "e2l's script  RSI(timeperiod , current_value, pre_value),\t\n  ./quant/Indicators/Momentum/RSI.e2"
+  },
+  "stoch": {
+    "prefix": "stoch",
+    "body": [
+      " stoch( period_k, period_d , size, current_close, cur_high, cur_low);"
+    ],
+    "description": "e2l's script  stoch( period_k, period_d , size, current_close, cur_high, cur_low),\t\n  ./quant/Indicators/Momentum/STOCH.e2"
+  },
+  "ITrend": {
+    "prefix": "ITrend",
+    "body": [
+      " ITrend(ItPeriod, PowerPeriod, price, low, high) ;"
+    ],
+    "description": "e2l's script  ITrend(ItPeriod, PowerPeriod, price, low, high) ,\t\n  ./quant/Indicators/Momentum/Itrend.e2"
+  },
+  "TDI": {
+    "prefix": "TDI",
+    "body": [
+      " TDI(timeperiod, current_value, pre_value) ;"
+    ],
+    "description": "e2l's script  TDI(timeperiod, current_value, pre_value) ,\t\n  ./quant/Indicators/Volatility/TDI.e2"
+  },
+  "tdiSave": {
+    "prefix": "tdiSave",
+    "body": [
+      " tdiSave(ret_id, pre_close, time) ;"
+    ],
+    "description": "e2l's script  tdiSave(ret_id, pre_close, time) ,\t\n  ./quant/Indicators/Volatility/TDI.e2"
+  },
+  "Cross": {
+    "prefix": "Cross",
+    "body": [
+      " Cross(input1, input2);"
+    ],
+    "description": "e2l's script  Cross(input1, input2),\t\n  ./quant/Indicators/Math/cross.e2"
+  },
+  "Bounds": {
+    "prefix": "Bounds",
+    "body": [
+      " Bounds(value) ;"
+    ],
+    "description": "e2l's script  Bounds(value) ,\t\n  ./quant/Indicators/Math/Extreme.e2"
+  },
+  "fibonacci": {
+    "prefix": "fibonacci",
+    "body": [
+      " fibonacci( idx ) ;"
+    ],
+    "description": "e2l's script  fibonacci( idx ) ,\t\n  ./quant/Indicators/Math/Fibonacci.e2"
+  },
+  "t": {
+    "prefix": "t",
+    "body": [
+      " t() ;"
+    ],
+    "description": "e2l's script  t() ,\t\n  ./quant/Indicators/Math/Fibonacci.e2"
+  },
+  "ss": {
+    "prefix": "ss",
+    "body": [
+      " ss() ;"
+    ],
+    "description": "e2l's script  ss() ,\t\n  ./quant/Indicators/Math/Fibonacci.e2"
+  },
+  "MA": {
+    "prefix": "MA",
+    "body": [
+      " MA(timeperiod, current_val);"
+    ],
+    "description": "e2l's script  MA(timeperiod, current_val),\t\n  ./quant/Indicators/OverlapStudies/MA.e2"
+  },
+  "EMA": {
+    "prefix": "EMA",
+    "body": [
+      " EMA(timeperiod , current_val);"
+    ],
+    "description": "e2l's script  EMA(timeperiod , current_val),\t\n  ./quant/Indicators/OverlapStudies/MA.e2"
+  },
+  "BOLLINGER": {
+    "prefix": "BOLLINGER",
+    "body": [
+      " BOLLINGER(period, dev, value );"
+    ],
+    "description": "e2l's script  BOLLINGER(period, dev, value ),\t\n  ./quant/Indicators/OverlapStudies/Bollinger.e2"
+  },
+  "BasicInit": {
+    "prefix": "BasicInit",
+    "body": [
+      " BasicInit( open, high, low, close, period ) ;"
+    ],
+    "description": "e2l's script  BasicInit( open, high, low, close, period ) ,\t\n  ./quant/Indicators/Candlesticker/BasicCandlesticks.e2"
+  },
+  "bbCheckTdi": {
+    "prefix": "bbCheckTdi",
+    "body": [
+      " bbCheckTdi(ret_id, level_bu, level_be, thread_id) ;"
+    ],
+    "description": "e2l's script  bbCheckTdi(ret_id, level_bu, level_be, thread_id) ,\t\n  ./quant/Indicators/Candlesticker/BasicCandlesticks.e2"
+  },
+  "bbCheckMA": {
+    "prefix": "bbCheckMA",
+    "body": [
+      " bbCheckMA(adj_close, timeperiod) ;"
+    ],
+    "description": "e2l's script  bbCheckMA(adj_close, timeperiod) ,\t\n  ./quant/Indicators/Candlesticker/BasicCandlesticks.e2"
+  },
+  "bearlish": {
+    "prefix": "bearlish",
+    "body": [
+      " bearlish(open, high, low, close ) ;"
+    ],
+    "description": "e2l's script  bearlish(open, high, low, close ) ,\t\n  ./quant/Indicators/Candlesticker/BasicCandlesticks.e2"
+  },
+  "bullish": {
+    "prefix": "bullish",
+    "body": [
+      " bullish(open, high, low, close) ;"
+    ],
+    "description": "e2l's script  bullish(open, high, low, close) ,\t\n  ./quant/Indicators/Candlesticker/BasicCandlesticks.e2"
+  },
+  "Adj": {
+    "prefix": "Adj",
+    "body": [
+      " Adj(adj_close) ;"
+    ],
+    "description": "e2l's script  Adj(adj_close) ,\t\n  ./quant/Physical/Mode/ModeHA.e2"
+  },
+  "ModeHA": {
+    "prefix": "ModeHA",
+    "body": [
+      " ModeHA() ;"
+    ],
+    "description": "e2l's script  ModeHA() ,\t\n  ./quant/Physical/Mode/ModeHA.e2"
+  },
+  "HATDIArgInit": {
+    "prefix": "HATDIArgInit",
+    "body": [
+      " HATDIArgInit() ;"
+    ],
+    "description": "e2l's script  HATDIArgInit() ,\t\n  ./quant/Physical/Mode/ModeHA.e2"
+  },
+  "ModeMA": {
+    "prefix": "ModeMA",
+    "body": [
+      " ModeMA(fast, slow , value );"
+    ],
+    "description": "e2l's script  ModeMA(fast, slow , value ),\t\n  ./quant/Physical/Mode/ModeMa.e2"
+  },
+  "Inspect": {
+    "prefix": "Inspect",
+    "body": [
+      " Inspect(fast, slow, value) ;"
+    ],
+    "description": "e2l's script  Inspect(fast, slow, value) ,\t\n  ./quant/Physical/Mode/ModeMa.e2"
+  },
+  "MaArgInit": {
+    "prefix": "MaArgInit",
+    "body": [
+      " MaArgInit() ;"
+    ],
+    "description": "e2l's script  MaArgInit() ,\t\n  ./quant/Physical/Mode/ModeMa.e2"
+  },
+  "ModeMACD": {
+    "prefix": "ModeMACD",
+    "body": [
+      " ModeMACD( fast, slow, signal ,value);"
+    ],
+    "description": "e2l's script  ModeMACD( fast, slow, signal ,value),\t\n  ./quant/Physical/Mode/ModeMACD.e2"
+  },
+  "MacdArgInit": {
+    "prefix": "MacdArgInit",
+    "body": [
+      " MacdArgInit() ;"
+    ],
+    "description": "e2l's script  MacdArgInit() ,\t\n  ./quant/Physical/Mode/ModeMACD.e2"
+  },
+  "ModeBoll": {
+    "prefix": "ModeBoll",
+    "body": [
+      " ModeBoll(bperiod, dev,signal,fast,slow, value);"
+    ],
+    "description": "e2l's script  ModeBoll(bperiod, dev,signal,fast,slow, value),\t\n  ./quant/Physical/Mode/ModeBoll.e2"
+  },
+  "BollArgInit": {
+    "prefix": "BollArgInit",
+    "body": [
+      " BollArgInit() ;"
+    ],
+    "description": "e2l's script  BollArgInit() ,\t\n  ./quant/Physical/Mode/ModeBoll.e2"
+  },
+  "macd_boll": {
+    "prefix": "macd_boll",
+    "body": [
+      " macd_boll() ;"
+    ],
+    "description": "e2l's script  macd_boll() ,\t\n  ./quant/Physical/Mode/ModeBoll.e2"
+  },
+  "Boll_RSI": {
+    "prefix": "Boll_RSI",
+    "body": [
+      " Boll_RSI(boll, rs, over, value0, value1) ;"
+    ],
+    "description": "e2l's script  Boll_RSI(boll, rs, over, value0, value1) ,\t\n  ./quant/Physical/Mode/BollRsi.e2"
+  },
+  "BollRsiArgInit": {
+    "prefix": "BollRsiArgInit",
+    "body": [
+      " BollRsiArgInit () ;"
+    ],
+    "description": "e2l's script  BollRsiArgInit () ,\t\n  ./quant/Physical/Mode/BollRsi.e2"
+  },
+  "ModeTALib": {
+    "prefix": "ModeTALib",
+    "body": [
+      " ModeTALib(cficode, timeframe, value) ;"
+    ],
+    "description": "e2l's script  ModeTALib(cficode, timeframe, value) ,\t\n  ./quant/Physical/Mode/ModeTA.e2"
+  },
+  "TaLibInit": {
+    "prefix": "TaLibInit",
+    "body": [
+      " TaLibInit() ;"
+    ],
+    "description": "e2l's script  TaLibInit() ,\t\n  ./quant/Physical/Mode/ModeTA.e2"
+  },
+  "ModeTDI": {
+    "prefix": "ModeTDI",
+    "body": [
+      " ModeTDI( open, high, low, close , safe_close) ;"
+    ],
+    "description": "e2l's script  ModeTDI( open, high, low, close , safe_close) ,\t\n  ./quant/Physical/Mode/ModeTDI.e2"
+  },
+  "TDIArgInit": {
+    "prefix": "TDIArgInit",
+    "body": [
+      " TDIArgInit() ;"
+    ],
+    "description": "e2l's script  TDIArgInit() ,\t\n  ./quant/Physical/Mode/ModeTDI.e2"
+  },
+  "ModeThreadNum": {
+    "prefix": "ModeThreadNum",
+    "body": [
+      " ModeThreadNum(size, init_id, step);"
+    ],
+    "description": "e2l's script  ModeThreadNum(size, init_id, step),\t\n  ./quant/Physical/ModeGuide/ThreadProcess.e2"
+  },
+  "PData": {
+    "prefix": "PData",
+    "body": [
+      " PData( );"
+    ],
+    "description": "e2l's script  PData( ),\t\n  ./quant/Physical/ModeGuide/ThreadProcess.e2"
+  },
+  "InitThreadArg": {
+    "prefix": "InitThreadArg",
+    "body": [
+      " InitThreadArg(mod_id, step, ext_data);"
+    ],
+    "description": "e2l's script  InitThreadArg(mod_id, step, ext_data),\t\n  ./quant/Physical/ModeGuide/ThreadProcess.e2"
+  },
+  "AdjAverage": {
+    "prefix": "AdjAverage",
+    "body": [
+      " AdjAverage(price) ;"
+    ],
+    "description": "e2l's script  AdjAverage(price) ,\t\n  ./quant/Physical/ModeGuide/ThreadProcess.e2"
+  },
+  "LongRisk": {
+    "prefix": "LongRisk",
+    "body": [
+      " LongRisk(css, now_price, pre_price, event) ;"
+    ],
+    "description": "e2l's script  LongRisk(css, now_price, pre_price, event) ,\t\n  ./quant/Physical/ModeGuide/ThreadProcess.e2"
+  },
+  "PRisk": {
+    "prefix": "PRisk",
+    "body": [
+      " PRisk(ticket, pclose, loss, event);"
+    ],
+    "description": "e2l's script  PRisk(ticket, pclose, loss, event),\t\n  ./quant/Physical/ModeGuide/ThreadProcess.e2"
+  },
+  "AnalyticPricing": {
+    "prefix": "AnalyticPricing",
+    "body": [
+      " AnalyticPricing( adj_close, days ) ;"
+    ],
+    "description": "e2l's script  AnalyticPricing( adj_close, days ) ,\t\n  ./quant/Physical/ModeGuide/ThreadProcess.e2"
+  },
+  "PTrade": {
+    "prefix": "PTrade",
+    "body": [
+      " PTrade(css, pclose, adj_close, loss, event );"
+    ],
+    "description": "e2l's script  PTrade(css, pclose, adj_close, loss, event ),\t\n  ./quant/Physical/ModeGuide/ThreadProcess.e2"
+  },
+  "ProcessInitData": {
+    "prefix": "ProcessInitData",
+    "body": [
+      " ProcessInitData( pid, mod_id, step, ext_data) ;"
+    ],
+    "description": "e2l's script  ProcessInitData( pid, mod_id, step, ext_data) ,\t\n  ./quant/Physical/ModeGuide/ThreadProcess.e2"
+  },
+  "ShowDayInfo": {
+    "prefix": "ShowDayInfo",
+    "body": [
+      " ShowDayInfo() ;"
+    ],
+    "description": "e2l's script  ShowDayInfo() ,\t\n  ./quant/Physical/ModeGuide/ThreadProcess.e2"
+  },
+  "ReportAnaly": {
+    "prefix": "ReportAnaly",
+    "body": [
+      " ReportAnaly( value, vtype, key ) ;"
+    ],
+    "description": "e2l's script  ReportAnaly( value, vtype, key ) ,\t\n  ./quant/Physical/ModeGuide/ReportAnalyse.e2"
+  },
+  "ReportFormula": {
+    "prefix": "ReportFormula",
+    "body": [
+      " ReportFormula(ticket, value) ;"
+    ],
+    "description": "e2l's script  ReportFormula(ticket, value) ,\t\n  ./quant/Physical/ModeGuide/ReportAnalyse.e2"
+  },
+  "ReportAdjPrice": {
+    "prefix": "ReportAdjPrice",
+    "body": [
+      " ReportAdjPrice(cficode, value ) ;"
+    ],
+    "description": "e2l's script  ReportAdjPrice(cficode, value ) ,\t\n  ./quant/Physical/ModeGuide/ReportAnalyse.e2"
+  },
+  "EngineTest": {
+    "prefix": "EngineTest",
+    "body": [
+      " EngineTest( size, stat) ;"
+    ],
+    "description": "e2l's script  EngineTest( size, stat) ,\t\n  ./quant/lab_enter.e2"
+  },
+  "lab_enter": {
+    "prefix": "lab_enter",
+    "body": [
+      " lab_enter(tick_size, thread_id) ;"
+    ],
+    "description": "e2l's script  lab_enter(tick_size, thread_id) ,\t\n  ./quant/lab_enter.e2"
+  },
+  "BtcUsdtEvent": {
+    "prefix": "BtcUsdtEvent",
+    "body": [
+      " BtcUsdtEvent(thread_id, now_close, event) ;"
+    ],
+    "description": "e2l's script  BtcUsdtEvent(thread_id, now_close, event) ,\t\n  ./quant/btc_usdt.e2"
+  },
+  "btc_usdt": {
+    "prefix": "btc_usdt",
+    "body": [
+      " btc_usdt(tick_size, thread_id) ;"
+    ],
+    "description": "e2l's script  btc_usdt(tick_size, thread_id) ,\t\n  ./quant/btc_usdt.e2"
+  },
+  "MacdOptPLog": {
+    "prefix": "MacdOptPLog",
+    "body": [
+      " MacdOptPLog(thread_id) ;"
+    ],
+    "description": "e2l's script  MacdOptPLog(thread_id) ,\t\n  ./quant/macd_opt.e2"
+  },
+  "POptimize": {
+    "prefix": "POptimize",
+    "body": [
+      " POptimize( index, current_val );"
+    ],
+    "description": "e2l's script  POptimize( index, current_val ),\t\n  ./quant/macd_opt.e2"
+  },
+  "MacdOptAlgo": {
+    "prefix": "MacdOptAlgo",
+    "body": [
+      " MacdOptAlgo(thread_id,now_close) ;"
+    ],
+    "description": "e2l's script  MacdOptAlgo(thread_id,now_close) ,\t\n  ./quant/macd_opt.e2"
+  },
+  "macd_opt_enter": {
+    "prefix": "macd_opt_enter",
+    "body": [
+      " macd_opt_enter(tick_size, thread_id) ;"
+    ],
+    "description": "e2l's script  macd_opt_enter(tick_size, thread_id) ,\t\n  ./quant/macd_opt.e2"
+  },
+  "TdiCross": {
+    "prefix": "TdiCross",
+    "body": [
+      " TdiCross(ret_id) ;"
+    ],
+    "description": "e2l's script  TdiCross(ret_id) ,\t\n  ./quant/tdi_enter.e2"
+  },
+  "TDIEvent": {
+    "prefix": "TDIEvent",
+    "body": [
+      " TDIEvent(thread_id, now_close , adj_close, event, pre_close) ;"
+    ],
+    "description": "e2l's script  TDIEvent(thread_id, now_close , adj_close, event, pre_close) ,\t\n  ./quant/tdi_enter.e2"
+  },
+  "tdi_mode_enter": {
+    "prefix": "tdi_mode_enter",
+    "body": [
+      " tdi_mode_enter(tick_size,thread_id) ;"
+    ],
+    "description": "e2l's script  tdi_mode_enter(tick_size,thread_id) ,\t\n  ./quant/tdi_enter.e2"
+  },
+  "GetHA": {
+    "prefix": "GetHA",
+    "body": [
+      " GetHA(idx,field) ;"
+    ],
+    "description": "e2l's script  GetHA(idx,field) ,\t\n  ./quant/ChartType/HeikinAshi.e2"
+  },
+  "GetHAOpen": {
+    "prefix": "GetHAOpen",
+    "body": [
+      " GetHAOpen(now) ;"
+    ],
+    "description": "e2l's script  GetHAOpen(now) ,\t\n  ./quant/ChartType/HeikinAshi.e2"
+  },
+  "GetHALow": {
+    "prefix": "GetHALow",
+    "body": [
+      " GetHALow(now) ;"
+    ],
+    "description": "e2l's script  GetHALow(now) ,\t\n  ./quant/ChartType/HeikinAshi.e2"
+  },
+  "GetHAHigh": {
+    "prefix": "GetHAHigh",
+    "body": [
+      " GetHAHigh(now) ;"
+    ],
+    "description": "e2l's script  GetHAHigh(now) ,\t\n  ./quant/ChartType/HeikinAshi.e2"
+  },
+  "GetHAClose": {
+    "prefix": "GetHAClose",
+    "body": [
+      " GetHAClose(now) ;"
+    ],
+    "description": "e2l's script  GetHAClose(now) ,\t\n  ./quant/ChartType/HeikinAshi.e2"
+  },
+  "Heikin": {
+    "prefix": "Heikin",
+    "body": [
+      " Heikin(open,high,low,close);"
+    ],
+    "description": "e2l's script  Heikin(open,high,low,close),\t\n  ./quant/ChartType/HeikinAshi.e2"
+  },
+  "ha": {
+    "prefix": "ha",
+    "body": [
+      " ha();"
+    ],
+    "description": "e2l's script  ha(),\t\n  ./quant/ChartType/HeikinAshi.e2"
+  },
+  "MacdPLog": {
+    "prefix": "MacdPLog",
+    "body": [
+      " MacdPLog(thread_id) ;"
+    ],
+    "description": "e2l's script  MacdPLog(thread_id) ,\t\n  ./quant/macd_enter.e2"
+  },
+  "MacdAlgo": {
+    "prefix": "MacdAlgo",
+    "body": [
+      " MacdAlgo(thread_id,now_close) ;"
+    ],
+    "description": "e2l's script  MacdAlgo(thread_id,now_close) ,\t\n  ./quant/macd_enter.e2"
+  },
+  "macd_enter": {
+    "prefix": "macd_enter",
+    "body": [
+      " macd_enter(tick_size, thread_id) ;"
+    ],
+    "description": "e2l's script  macd_enter(tick_size, thread_id) ,\t\n  ./quant/macd_enter.e2"
+  },
+  "MaPEvent": {
+    "prefix": "MaPEvent",
+    "body": [
+      " MaPEvent(thread_id, now_close, event) ;"
+    ],
+    "description": "e2l's script  MaPEvent(thread_id, now_close, event) ,\t\n  ./quant/ma_enter.e2"
+  },
+  "ma_enter": {
+    "prefix": "ma_enter",
+    "body": [
+      " ma_enter(tick_size, thread_id) ;"
+    ],
+    "description": "e2l's script  ma_enter(tick_size, thread_id) ,\t\n  ./quant/ma_enter.e2"
+  },
+  "show_bounds": {
+    "prefix": "show_bounds",
+    "body": [
+      " show_bounds( price, css ) ;"
+    ],
+    "description": "e2l's script  show_bounds( price, css ) ,\t\n  ./quant/control/Order.e2"
+  },
+  "Buy": {
+    "prefix": "Buy",
+    "body": [
+      " Buy(price);"
+    ],
+    "description": "e2l's script  Buy(price),\t\n  ./quant/control/Order.e2"
+  },
+  "Sell": {
+    "prefix": "Sell",
+    "body": [
+      " Sell(price, ticket, lots);"
+    ],
+    "description": "e2l's script  Sell(price, ticket, lots),\t\n  ./quant/control/Order.e2"
+  },
+  "MuchOrder": {
+    "prefix": "MuchOrder",
+    "body": [
+      " MuchOrder(css) ;"
+    ],
+    "description": "e2l's script  MuchOrder(css) ,\t\n  ./quant/control/Order.e2"
+  },
+  "CurrentTicket": {
+    "prefix": "CurrentTicket",
+    "body": [
+      " CurrentTicket() ;"
+    ],
+    "description": "e2l's script  CurrentTicket() ,\t\n  ./quant/control/Order.e2"
+  },
+  "Trade": {
+    "prefix": "Trade",
+    "body": [
+      " Trade(ticket, order_sig, price, flag );"
+    ],
+    "description": "e2l's script  Trade(ticket, order_sig, price, flag ),\t\n  ./quant/control/Order.e2"
+  },
+  "BuildAdjBar": {
+    "prefix": "BuildAdjBar",
+    "body": [
+      " BuildAdjBar(adj) ;"
+    ],
+    "description": "e2l's script  BuildAdjBar(adj) ,\t\n  ./quant/control/defined.e2"
+  },
+  "GetAdjBar": {
+    "prefix": "GetAdjBar",
+    "body": [
+      " GetAdjBar(idx, field) ;"
+    ],
+    "description": "e2l's script  GetAdjBar(idx, field) ,\t\n  ./quant/control/defined.e2"
+  },
+  "GetAdjOpen": {
+    "prefix": "GetAdjOpen",
+    "body": [
+      " GetAdjOpen( now ) ;"
+    ],
+    "description": "e2l's script  GetAdjOpen( now ) ,\t\n  ./quant/control/defined.e2"
+  },
+  "GetAdjLow": {
+    "prefix": "GetAdjLow",
+    "body": [
+      " GetAdjLow(now) ;"
+    ],
+    "description": "e2l's script  GetAdjLow(now) ,\t\n  ./quant/control/defined.e2"
+  },
+  "GetAdjHigh": {
+    "prefix": "GetAdjHigh",
+    "body": [
+      " GetAdjHigh( now ) ;"
+    ],
+    "description": "e2l's script  GetAdjHigh( now ) ,\t\n  ./quant/control/defined.e2"
+  },
+  "GetAdjClose": {
+    "prefix": "GetAdjClose",
+    "body": [
+      " GetAdjClose(now) ;"
+    ],
+    "description": "e2l's script  GetAdjClose(now) ,\t\n  ./quant/control/defined.e2"
+  },
+  "BollEvent": {
+    "prefix": "BollEvent",
+    "body": [
+      " BollEvent(thread_id, now_close , adj_close, event) ;"
+    ],
+    "description": "e2l's script  BollEvent(thread_id, now_close , adj_close, event) ,\t\n  ./quant/mboll_enter.e2"
+  },
+  "macd_boll_enter": {
+    "prefix": "macd_boll_enter",
+    "body": [
+      " macd_boll_enter(tick_size, thread_id) ;"
+    ],
+    "description": "e2l's script  macd_boll_enter(tick_size, thread_id) ,\t\n  ./quant/mboll_enter.e2"
+  },
+  "csv_data": {
+    "prefix": "csv_data",
+    "body": [
+      " csv_data();"
+    ],
+    "description": "e2l's script  csv_data(),\t\n  ./oms/oms.e2"
+  },
+  "kafka_data": {
+    "prefix": "kafka_data",
+    "body": [
+      " kafka_data();"
+    ],
+    "description": "e2l's script  kafka_data(),\t\n  ./oms/oms.e2"
+  },
+  "Astock": {
+    "prefix": "Astock",
+    "body": [
+      " Astock() ;"
+    ],
+    "description": "e2l's script  Astock() ,\t\n  ./oms/oms.e2"
+  },
+  "htx": {
+    "prefix": "htx",
+    "body": [
+      " htx() ;"
+    ],
+    "description": "e2l's script  htx() ,\t\n  ./oms/oms.e2"
+  },
+  "ABook": {
+    "prefix": "ABook",
+    "body": [
+      " ABook() ;"
+    ],
+    "description": "e2l's script  ABook() ,\t\n  ./oms/oms.e2"
+  },
+  "config": {
+    "prefix": "config",
+    "body": [
+      " config();"
+    ],
+    "description": "e2l's script  config(),\t\n  ./oms/oms.e2"
+  },
+  "hfq": {
+    "prefix": "hfq",
+    "body": [
+      " hfq( cfi_code ) ;"
+    ],
+    "description": "e2l's script  hfq( cfi_code ) ,\t\n  ./oms/main.e2"
+  },
+  "start": {
+    "prefix": "start",
+    "body": [
+      " start( arg0, arg1 );"
+    ],
+    "description": "e2l's script  start( arg0, arg1 ),\t\n  ./oms/main.e2"
+  },
+  "OnLineTime": {
+    "prefix": "OnLineTime",
+    "body": [
+      " OnLineTime() ;"
+    ],
+    "description": "e2l's script  OnLineTime() ,\t\n  ./oms/risk.e2"
+  },
+  "OrderStart": {
+    "prefix": "OrderStart",
+    "body": [
+      " OrderStart() ;"
+    ],
+    "description": "e2l's script  OrderStart() ,\t\n  ./oms/risk.e2"
+  },
+  "risk": {
+    "prefix": "risk",
+    "body": [
+      " risk( cficode );"
+    ],
+    "description": "e2l's script  risk( cficode ),\t\n  ./oms/risk.e2"
+  },
+  "ISymbols.index": {
+    "prefix": "ISymbols.index",
+    "body": [
+      "ISymbols.index"
+    ],
+    "description": "e2l's script ISymbols.index = 0; #  sh000001=0;,\t\n  ./quant/Config/iunion.e2"
+  },
+  "ISymbols.id": {
+    "prefix": "ISymbols.id",
+    "body": [
+      "ISymbols.id"
+    ],
+    "description": "e2l's script ISymbols.id = 50000;  #   mutile thread id,\t\n  ./quant/Config/iunion.e2"
+  },
+  "IOrder.pass": {
+    "prefix": "IOrder.pass",
+    "body": [
+      "IOrder.pass"
+    ],
+    "description": "e2l's script IOrder.pass=0;,\t\n  ./quant/Config/iunion.e2"
+  },
+  "IOrder.long": {
+    "prefix": "IOrder.long",
+    "body": [
+      "IOrder.long"
+    ],
+    "description": "e2l's script IOrder.long=1;,\t\n  ./quant/Config/iunion.e2"
+  },
+  "IOrder.short": {
+    "prefix": "IOrder.short",
+    "body": [
+      "IOrder.short"
+    ],
+    "description": "e2l's script IOrder.short=2;,\t\n  ./quant/Config/iunion.e2"
+  },
+  "Ima.ma_fast": {
+    "prefix": "Ima.ma_fast",
+    "body": [
+      "Ima.ma_fast"
+    ],
+    "description": "e2l's script Ima.ma_fast=5;,\t\n  ./quant/Config/iunion.e2"
+  },
+  "Ima.ma_slow": {
+    "prefix": "Ima.ma_slow",
+    "body": [
+      "Ima.ma_slow"
+    ],
+    "description": "e2l's script Ima.ma_slow=8;,\t\n  ./quant/Config/iunion.e2"
+  },
+  "IMACD.fast": {
+    "prefix": "IMACD.fast",
+    "body": [
+      "IMACD.fast"
+    ],
+    "description": "e2l's script IMACD.fast=12;,\t\n  ./quant/Config/iunion.e2"
+  },
+  "IMACD.slow": {
+    "prefix": "IMACD.slow",
+    "body": [
+      "IMACD.slow"
+    ],
+    "description": "e2l's script IMACD.slow=26;,\t\n  ./quant/Config/iunion.e2"
+  },
+  "IMACD.signal": {
+    "prefix": "IMACD.signal",
+    "body": [
+      "IMACD.signal"
+    ],
+    "description": "e2l's script IMACD.signal=9;,\t\n  ./quant/Config/iunion.e2"
+  },
+  "ISTOCH.period_k": {
+    "prefix": "ISTOCH.period_k",
+    "body": [
+      "ISTOCH.period_k"
+    ],
+    "description": "e2l's script ISTOCH.period_k=14;,\t\n  ./quant/Config/iunion.e2"
+  },
+  "ISTOCH.period_d": {
+    "prefix": "ISTOCH.period_d",
+    "body": [
+      "ISTOCH.period_d"
+    ],
+    "description": "e2l's script ISTOCH.period_d=3;,\t\n  ./quant/Config/iunion.e2"
+  },
+  "IBBANDS.period": {
+    "prefix": "IBBANDS.period",
+    "body": [
+      "IBBANDS.period"
+    ],
+    "description": "e2l's script IBBANDS.period=20;,\t\n  ./quant/Config/iunion.e2"
+  },
+  "IBBANDS.dev": {
+    "prefix": "IBBANDS.dev",
+    "body": [
+      "IBBANDS.dev"
+    ],
+    "description": "e2l's script IBBANDS.dev=2;,\t\n  ./quant/Config/iunion.e2"
+  },
+  "IThreadNum.thread_num": {
+    "prefix": "IThreadNum.thread_num",
+    "body": [
+      "IThreadNum.thread_num"
+    ],
+    "description": "e2l's script IThreadNum.thread_num = 1;,\t\n  ./quant/Config/iunion.e2"
+  },
+  "IThreadNum.thread_postion": {
+    "prefix": "IThreadNum.thread_postion",
+    "body": [
+      "IThreadNum.thread_postion"
+    ],
+    "description": "e2l's script IThreadNum.thread_postion = 0;,\t\n  ./quant/Config/iunion.e2"
+  },
+  "IBarStatus.id": {
+    "prefix": "IBarStatus.id",
+    "body": [
+      "IBarStatus.id"
+    ],
+    "description": "e2l's script IBarStatus.id = 100011;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IBarStatus.size": {
+    "prefix": "IBarStatus.size",
+    "body": [
+      "IBarStatus.size"
+    ],
+    "description": "e2l's script IBarStatus.size=3;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeSingal.orders": {
+    "prefix": "ITradeSingal.orders",
+    "body": [
+      "ITradeSingal.orders"
+    ],
+    "description": "e2l's script ITradeSingal.orders = 100012;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeSingal.id": {
+    "prefix": "ITradeSingal.id",
+    "body": [
+      "ITradeSingal.id"
+    ],
+    "description": "e2l's script ITradeSingal.id = 100013;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IPhyIds.data_id": {
+    "prefix": "IPhyIds.data_id",
+    "body": [
+      "IPhyIds.data_id"
+    ],
+    "description": "e2l's script IPhyIds.data_id = 100014;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IPhyIds.data_size": {
+    "prefix": "IPhyIds.data_size",
+    "body": [
+      "IPhyIds.data_size"
+    ],
+    "description": "e2l's script IPhyIds.data_size = 2;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeTread.thread_num_id": {
+    "prefix": "IModeTread.thread_num_id",
+    "body": [
+      "IModeTread.thread_num_id"
+    ],
+    "description": "e2l's script IModeTread.thread_num_id = 100015;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeTread.random": {
+    "prefix": "IModeTread.random",
+    "body": [
+      "IModeTread.random"
+    ],
+    "description": "e2l's script IModeTread.random = 1;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "AnalseId.arg_id": {
+    "prefix": "AnalseId.arg_id",
+    "body": [
+      "AnalseId.arg_id"
+    ],
+    "description": "e2l's script AnalseId.arg_id = 100016;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IProcessMode.init_val": {
+    "prefix": "IProcessMode.init_val",
+    "body": [
+      "IProcessMode.init_val"
+    ],
+    "description": "e2l's script IProcessMode.init_val = 101011;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IProcessMode.only": {
+    "prefix": "IProcessMode.only",
+    "body": [
+      "IProcessMode.only"
+    ],
+    "description": "e2l's script IProcessMode.only = 1;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeLoss.stop_loss": {
+    "prefix": "ITradeLoss.stop_loss",
+    "body": [
+      "ITradeLoss.stop_loss"
+    ],
+    "description": "e2l's script ITradeLoss.stop_loss = 101012;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeLoss.loss_id": {
+    "prefix": "ITradeLoss.loss_id",
+    "body": [
+      "ITradeLoss.loss_id"
+    ],
+    "description": "e2l's script ITradeLoss.loss_id =  101013;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeLoss.loss_min": {
+    "prefix": "ITradeLoss.loss_min",
+    "body": [
+      "ITradeLoss.loss_min"
+    ],
+    "description": "e2l's script ITradeLoss.loss_min = -0.0145;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeLoss.loss_max": {
+    "prefix": "ITradeLoss.loss_max",
+    "body": [
+      "ITradeLoss.loss_max"
+    ],
+    "description": "e2l's script ITradeLoss.loss_max = -0.0618;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeLoss.take_profit": {
+    "prefix": "ITradeLoss.take_profit",
+    "body": [
+      "ITradeLoss.take_profit"
+    ],
+    "description": "e2l's script ITradeLoss.take_profit = 101014;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeLoss.back_profit": {
+    "prefix": "ITradeLoss.back_profit",
+    "body": [
+      "ITradeLoss.back_profit"
+    ],
+    "description": "e2l's script ITradeLoss.back_profit = -0.0901;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeLoss.limit": {
+    "prefix": "ITradeLoss.limit",
+    "body": [
+      "ITradeLoss.limit"
+    ],
+    "description": "e2l's script ITradeLoss.limit = 101015;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeLoss.analytic_price": {
+    "prefix": "ITradeLoss.analytic_price",
+    "body": [
+      "ITradeLoss.analytic_price"
+    ],
+    "description": "e2l's script ITradeLoss.analytic_price = 101016;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeLoss.ap_def": {
+    "prefix": "ITradeLoss.ap_def",
+    "body": [
+      "ITradeLoss.ap_def"
+    ],
+    "description": "e2l's script ITradeLoss.ap_def = 0.9;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeLoss.risk": {
+    "prefix": "ITradeLoss.risk",
+    "body": [
+      "ITradeLoss.risk"
+    ],
+    "description": "e2l's script ITradeLoss.risk = 101017;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeLoss.risk_size": {
+    "prefix": "ITradeLoss.risk_size",
+    "body": [
+      "ITradeLoss.risk_size"
+    ],
+    "description": "e2l's script ITradeLoss.risk_size = 6;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeLoss.risk_run": {
+    "prefix": "ITradeLoss.risk_run",
+    "body": [
+      "ITradeLoss.risk_run"
+    ],
+    "description": "e2l's script ITradeLoss.risk_run = 0;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeLoss.risk_change": {
+    "prefix": "ITradeLoss.risk_change",
+    "body": [
+      "ITradeLoss.risk_change"
+    ],
+    "description": "e2l's script ITradeLoss.risk_change = 1;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeLoss.risk_price": {
+    "prefix": "ITradeLoss.risk_price",
+    "body": [
+      "ITradeLoss.risk_price"
+    ],
+    "description": "e2l's script ITradeLoss.risk_price = 2;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeLoss.risk_min_max": {
+    "prefix": "ITradeLoss.risk_min_max",
+    "body": [
+      "ITradeLoss.risk_min_max"
+    ],
+    "description": "e2l's script ITradeLoss.risk_min_max = 101018;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITradeLoss.risk_mm": {
+    "prefix": "ITradeLoss.risk_mm",
+    "body": [
+      "ITradeLoss.risk_mm"
+    ],
+    "description": "e2l's script ITradeLoss.risk_mm = 4;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ILatelyId.min": {
+    "prefix": "ILatelyId.min",
+    "body": [
+      "ILatelyId.min"
+    ],
+    "description": "e2l's script ILatelyId.min = 101026;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ILatelyId.min_size": {
+    "prefix": "ILatelyId.min_size",
+    "body": [
+      "ILatelyId.min_size"
+    ],
+    "description": "e2l's script ILatelyId.min_size = 4;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ILatelyId.max": {
+    "prefix": "ILatelyId.max",
+    "body": [
+      "ILatelyId.max"
+    ],
+    "description": "e2l's script ILatelyId.max = 101027;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ILatelyId.max_size": {
+    "prefix": "ILatelyId.max_size",
+    "body": [
+      "ILatelyId.max_size"
+    ],
+    "description": "e2l's script ILatelyId.max_size = 4;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.ma": {
+    "prefix": "IModeSelect.ma",
+    "body": [
+      "IModeSelect.ma"
+    ],
+    "description": "e2l's script IModeSelect.ma = 0;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.ma_step": {
+    "prefix": "IModeSelect.ma_step",
+    "body": [
+      "IModeSelect.ma_step"
+    ],
+    "description": "e2l's script IModeSelect.ma_step = 5;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.ma_loss": {
+    "prefix": "IModeSelect.ma_loss",
+    "body": [
+      "IModeSelect.ma_loss"
+    ],
+    "description": "e2l's script IModeSelect.ma_loss = 1;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.ma_inspect": {
+    "prefix": "IModeSelect.ma_inspect",
+    "body": [
+      "IModeSelect.ma_inspect"
+    ],
+    "description": "e2l's script IModeSelect.ma_inspect = 101030;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.ma_size": {
+    "prefix": "IModeSelect.ma_size",
+    "body": [
+      "IModeSelect.ma_size"
+    ],
+    "description": "e2l's script IModeSelect.ma_size = 2;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.boll": {
+    "prefix": "IModeSelect.boll",
+    "body": [
+      "IModeSelect.boll"
+    ],
+    "description": "e2l's script IModeSelect.boll = 4;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.boll_step": {
+    "prefix": "IModeSelect.boll_step",
+    "body": [
+      "IModeSelect.boll_step"
+    ],
+    "description": "e2l's script IModeSelect.boll_step = 3;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.boll_loss": {
+    "prefix": "IModeSelect.boll_loss",
+    "body": [
+      "IModeSelect.boll_loss"
+    ],
+    "description": "e2l's script IModeSelect.boll_loss = 1;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.boll_macd_id": {
+    "prefix": "IModeSelect.boll_macd_id",
+    "body": [
+      "IModeSelect.boll_macd_id"
+    ],
+    "description": "e2l's script IModeSelect.boll_macd_id = 101031;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.ta": {
+    "prefix": "IModeSelect.ta",
+    "body": [
+      "IModeSelect.ta"
+    ],
+    "description": "e2l's script IModeSelect.ta = 2;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.ta_step": {
+    "prefix": "IModeSelect.ta_step",
+    "body": [
+      "IModeSelect.ta_step"
+    ],
+    "description": "e2l's script IModeSelect.ta_step = 0;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.ta_loss": {
+    "prefix": "IModeSelect.ta_loss",
+    "body": [
+      "IModeSelect.ta_loss"
+    ],
+    "description": "e2l's script IModeSelect.ta_loss = 0;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.rsiboll": {
+    "prefix": "IModeSelect.rsiboll",
+    "body": [
+      "IModeSelect.rsiboll"
+    ],
+    "description": "e2l's script IModeSelect.rsiboll = 3;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.rb_step": {
+    "prefix": "IModeSelect.rb_step",
+    "body": [
+      "IModeSelect.rb_step"
+    ],
+    "description": "e2l's script IModeSelect.rb_step = 3;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.br_loss": {
+    "prefix": "IModeSelect.br_loss",
+    "body": [
+      "IModeSelect.br_loss"
+    ],
+    "description": "e2l's script IModeSelect.br_loss = 1;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.macd": {
+    "prefix": "IModeSelect.macd",
+    "body": [
+      "IModeSelect.macd"
+    ],
+    "description": "e2l's script IModeSelect.macd = 4;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.macd_step": {
+    "prefix": "IModeSelect.macd_step",
+    "body": [
+      "IModeSelect.macd_step"
+    ],
+    "description": "e2l's script IModeSelect.macd_step = 1;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.macd_loss": {
+    "prefix": "IModeSelect.macd_loss",
+    "body": [
+      "IModeSelect.macd_loss"
+    ],
+    "description": "e2l's script IModeSelect.macd_loss = 1;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.tdi": {
+    "prefix": "IModeSelect.tdi",
+    "body": [
+      "IModeSelect.tdi"
+    ],
+    "description": "e2l's script IModeSelect.tdi = 5;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.tdi_step": {
+    "prefix": "IModeSelect.tdi_step",
+    "body": [
+      "IModeSelect.tdi_step"
+    ],
+    "description": "e2l's script IModeSelect.tdi_step = 5;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.tdi_loss": {
+    "prefix": "IModeSelect.tdi_loss",
+    "body": [
+      "IModeSelect.tdi_loss"
+    ],
+    "description": "e2l's script IModeSelect.tdi_loss = 1;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.ha": {
+    "prefix": "IModeSelect.ha",
+    "body": [
+      "IModeSelect.ha"
+    ],
+    "description": "e2l's script IModeSelect.ha = 6;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.ha_id": {
+    "prefix": "IModeSelect.ha_id",
+    "body": [
+      "IModeSelect.ha_id"
+    ],
+    "description": "e2l's script IModeSelect.ha_id = 101032;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.ha_step": {
+    "prefix": "IModeSelect.ha_step",
+    "body": [
+      "IModeSelect.ha_step"
+    ],
+    "description": "e2l's script IModeSelect.ha_step = 9;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.ha_size": {
+    "prefix": "IModeSelect.ha_size",
+    "body": [
+      "IModeSelect.ha_size"
+    ],
+    "description": "e2l's script IModeSelect.ha_size = 2;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IModeSelect.bounds": {
+    "prefix": "IModeSelect.bounds",
+    "body": [
+      "IModeSelect.bounds"
+    ],
+    "description": "e2l's script IModeSelect.bounds = 0;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IBound.bid": {
+    "prefix": "IBound.bid",
+    "body": [
+      "IBound.bid"
+    ],
+    "description": "e2l's script IBound.bid = 101049;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IBound.size": {
+    "prefix": "IBound.size",
+    "body": [
+      "IBound.size"
+    ],
+    "description": "e2l's script IBound.size = 6;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IBound.fib": {
+    "prefix": "IBound.fib",
+    "body": [
+      "IBound.fib"
+    ],
+    "description": "e2l's script IBound.fib = 8;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IExdi.id": {
+    "prefix": "IExdi.id",
+    "body": [
+      "IExdi.id"
+    ],
+    "description": "e2l's script IExdi.id = 101050;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IHeikin.id": {
+    "prefix": "IHeikin.id",
+    "body": [
+      "IHeikin.id"
+    ],
+    "description": "e2l's script IHeikin.id = 101061;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IHeikin.size": {
+    "prefix": "IHeikin.size",
+    "body": [
+      "IHeikin.size"
+    ],
+    "description": "e2l's script IHeikin.size = 8;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IHeikin.open": {
+    "prefix": "IHeikin.open",
+    "body": [
+      "IHeikin.open"
+    ],
+    "description": "e2l's script IHeikin.open = 0;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IHeikin.low": {
+    "prefix": "IHeikin.low",
+    "body": [
+      "IHeikin.low"
+    ],
+    "description": "e2l's script IHeikin.low = 1;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IHeikin.high": {
+    "prefix": "IHeikin.high",
+    "body": [
+      "IHeikin.high"
+    ],
+    "description": "e2l's script IHeikin.high = 2;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IHeikin.close": {
+    "prefix": "IHeikin.close",
+    "body": [
+      "IHeikin.close"
+    ],
+    "description": "e2l's script IHeikin.close = 3;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IAnalseLogType.tdi_log": {
+    "prefix": "IAnalseLogType.tdi_log",
+    "body": [
+      "IAnalseLogType.tdi_log"
+    ],
+    "description": "e2l's script IAnalseLogType.tdi_log = 1;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IAnalseLogType.oid": {
+    "prefix": "IAnalseLogType.oid",
+    "body": [
+      "IAnalseLogType.oid"
+    ],
+    "description": "e2l's script IAnalseLogType.oid = 101071;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IAnalseLogType.order_formula": {
+    "prefix": "IAnalseLogType.order_formula",
+    "body": [
+      "IAnalseLogType.order_formula"
+    ],
+    "description": "e2l's script IAnalseLogType.order_formula = 2;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IAnalseLogType.adj_price": {
+    "prefix": "IAnalseLogType.adj_price",
+    "body": [
+      "IAnalseLogType.adj_price"
+    ],
+    "description": "e2l's script IAnalseLogType.adj_price = 3;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IDefineBar.id": {
+    "prefix": "IDefineBar.id",
+    "body": [
+      "IDefineBar.id"
+    ],
+    "description": "e2l's script IDefineBar.id = 101081;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IDefineBar.size": {
+    "prefix": "IDefineBar.size",
+    "body": [
+      "IDefineBar.size"
+    ],
+    "description": "e2l's script IDefineBar.size = 8;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IDefineBar.open": {
+    "prefix": "IDefineBar.open",
+    "body": [
+      "IDefineBar.open"
+    ],
+    "description": "e2l's script IDefineBar.open = 0;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IDefineBar.low": {
+    "prefix": "IDefineBar.low",
+    "body": [
+      "IDefineBar.low"
+    ],
+    "description": "e2l's script IDefineBar.low = 1;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IDefineBar.high": {
+    "prefix": "IDefineBar.high",
+    "body": [
+      "IDefineBar.high"
+    ],
+    "description": "e2l's script IDefineBar.high = 2;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "IDefineBar.close": {
+    "prefix": "IDefineBar.close",
+    "body": [
+      "IDefineBar.close"
+    ],
+    "description": "e2l's script IDefineBar.close = 3;,\t\n  ./quant/Config/StaticStoreId.e2"
+  },
+  "ITDIStruct.UpZone": {
+    "prefix": "ITDIStruct.UpZone",
+    "body": [
+      "ITDIStruct.UpZone"
+    ],
+    "description": "e2l's script ITDIStruct.UpZone = 1;,\t\n  ./quant/Indicators/Volatility/TDI.e2"
+  },
+  "ITDIStruct.MdZone": {
+    "prefix": "ITDIStruct.MdZone",
+    "body": [
+      "ITDIStruct.MdZone"
+    ],
+    "description": "e2l's script ITDIStruct.MdZone = 2;,\t\n  ./quant/Indicators/Volatility/TDI.e2"
+  },
+  "ITDIStruct.DnZone": {
+    "prefix": "ITDIStruct.DnZone",
+    "body": [
+      "ITDIStruct.DnZone"
+    ],
+    "description": "e2l's script ITDIStruct.DnZone = 3;,\t\n  ./quant/Indicators/Volatility/TDI.e2"
+  },
+  "ITDIStruct.RPL": {
+    "prefix": "ITDIStruct.RPL",
+    "body": [
+      "ITDIStruct.RPL"
+    ],
+    "description": "e2l's script ITDIStruct.RPL = 4;,\t\n  ./quant/Indicators/Volatility/TDI.e2"
+  },
+  "ITDIStruct.TSL": {
+    "prefix": "ITDIStruct.TSL",
+    "body": [
+      "ITDIStruct.TSL"
+    ],
+    "description": "e2l's script ITDIStruct.TSL = 5;,\t\n  ./quant/Indicators/Volatility/TDI.e2"
+  },
+  "IPatterns.erange": {
+    "prefix": "IPatterns.erange",
+    "body": [
+      "IPatterns.erange"
+    ],
+    "description": "e2l's script IPatterns.erange = 0.0081;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IPatterns.short": {
+    "prefix": "IPatterns.short",
+    "body": [
+      "IPatterns.short"
+    ],
+    "description": "e2l's script IPatterns.short = 0.0131;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IPatterns.normal": {
+    "prefix": "IPatterns.normal",
+    "body": [
+      "IPatterns.normal"
+    ],
+    "description": "e2l's script IPatterns.normal = 0.0344;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IPatterns.long": {
+    "prefix": "IPatterns.long",
+    "body": [
+      "IPatterns.long"
+    ],
+    "description": "e2l's script IPatterns.long = 0.0557;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IPatterns.updown": {
+    "prefix": "IPatterns.updown",
+    "body": [
+      "IPatterns.updown"
+    ],
+    "description": "e2l's script IPatterns.updown = 0.0212;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IPatterns.scale": {
+    "prefix": "IPatterns.scale",
+    "body": [
+      "IPatterns.scale"
+    ],
+    "description": "e2l's script IPatterns.scale = 1.6179;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IPatterns.dscale": {
+    "prefix": "IPatterns.dscale",
+    "body": [
+      "IPatterns.dscale"
+    ],
+    "description": "e2l's script IPatterns.dscale = 2.6181;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "Ielement.body": {
+    "prefix": "Ielement.body",
+    "body": [
+      "Ielement.body"
+    ],
+    "description": "e2l's script Ielement.body = 0;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "Ielement.bodyabs": {
+    "prefix": "Ielement.bodyabs",
+    "body": [
+      "Ielement.bodyabs"
+    ],
+    "description": "e2l's script Ielement.bodyabs = 1;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "Ielement.edown": {
+    "prefix": "Ielement.edown",
+    "body": [
+      "Ielement.edown"
+    ],
+    "description": "e2l's script Ielement.edown=2;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "Ielement.etop": {
+    "prefix": "Ielement.etop",
+    "body": [
+      "Ielement.etop"
+    ],
+    "description": "e2l's script Ielement.etop=3;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "Ielement.lowerbody": {
+    "prefix": "Ielement.lowerbody",
+    "body": [
+      "Ielement.lowerbody"
+    ],
+    "description": "e2l's script Ielement.lowerbody=4;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "Ielement.lowerbodyrange": {
+    "prefix": "Ielement.lowerbodyrange",
+    "body": [
+      "Ielement.lowerbodyrange"
+    ],
+    "description": "e2l's script Ielement.lowerbodyrange=5;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "Ielement.highbody": {
+    "prefix": "Ielement.highbody",
+    "body": [
+      "Ielement.highbody"
+    ],
+    "description": "e2l's script Ielement.highbody=6;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "Ielement.highbodyrange": {
+    "prefix": "Ielement.highbodyrange",
+    "body": [
+      "Ielement.highbodyrange"
+    ],
+    "description": "e2l's script Ielement.highbodyrange=7;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IeleBody.bodyline": {
+    "prefix": "IeleBody.bodyline",
+    "body": [
+      "IeleBody.bodyline"
+    ],
+    "description": "e2l's script IeleBody.bodyline = 0;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IeleBody.bodyshort": {
+    "prefix": "IeleBody.bodyshort",
+    "body": [
+      "IeleBody.bodyshort"
+    ],
+    "description": "e2l's script IeleBody.bodyshort = 1;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IeleBody.bodydefault": {
+    "prefix": "IeleBody.bodydefault",
+    "body": [
+      "IeleBody.bodydefault"
+    ],
+    "description": "e2l's script IeleBody.bodydefault = 2;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IeleBody.bodylong": {
+    "prefix": "IeleBody.bodylong",
+    "body": [
+      "IeleBody.bodylong"
+    ],
+    "description": "e2l's script IeleBody.bodylong = 3;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IeleShadow.none": {
+    "prefix": "IeleShadow.none",
+    "body": [
+      "IeleShadow.none"
+    ],
+    "description": "e2l's script IeleShadow.none = 0;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IeleShadow.normal": {
+    "prefix": "IeleShadow.normal",
+    "body": [
+      "IeleShadow.normal"
+    ],
+    "description": "e2l's script IeleShadow.normal = 1;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IeleShadow.up": {
+    "prefix": "IeleShadow.up",
+    "body": [
+      "IeleShadow.up"
+    ],
+    "description": "e2l's script IeleShadow.up = 2;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IeleShadow.down": {
+    "prefix": "IeleShadow.down",
+    "body": [
+      "IeleShadow.down"
+    ],
+    "description": "e2l's script IeleShadow.down = 3;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IeleShadow.long": {
+    "prefix": "IeleShadow.long",
+    "body": [
+      "IeleShadow.long"
+    ],
+    "description": "e2l's script IeleShadow.long = 4;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlestick.SHORT": {
+    "prefix": "ICandlestick.SHORT",
+    "body": [
+      "ICandlestick.SHORT"
+    ],
+    "description": "e2l's script ICandlestick.SHORT=1;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlestick.NORMA": {
+    "prefix": "ICandlestick.NORMA",
+    "body": [
+      "ICandlestick.NORMA"
+    ],
+    "description": "e2l's script ICandlestick.NORMA=2;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlestick.LONG": {
+    "prefix": "ICandlestick.LONG",
+    "body": [
+      "ICandlestick.LONG"
+    ],
+    "description": "e2l's script ICandlestick.LONG=3;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlestick.MARUBOZU": {
+    "prefix": "ICandlestick.MARUBOZU",
+    "body": [
+      "ICandlestick.MARUBOZU"
+    ],
+    "description": "e2l's script ICandlestick.MARUBOZU=4;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlestick.NOTLOWMARUBOZU": {
+    "prefix": "ICandlestick.NOTLOWMARUBOZU",
+    "body": [
+      "ICandlestick.NOTLOWMARUBOZU"
+    ],
+    "description": "e2l's script ICandlestick.NOTLOWMARUBOZU=5;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlestick.NOTHIGHMARUBOZU": {
+    "prefix": "ICandlestick.NOTHIGHMARUBOZU",
+    "body": [
+      "ICandlestick.NOTHIGHMARUBOZU"
+    ],
+    "description": "e2l's script ICandlestick.NOTHIGHMARUBOZU=6;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlestick.SPINNINGTOP": {
+    "prefix": "ICandlestick.SPINNINGTOP",
+    "body": [
+      "ICandlestick.SPINNINGTOP"
+    ],
+    "description": "e2l's script ICandlestick.SPINNINGTOP=7;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlestick.UMBRELLA": {
+    "prefix": "ICandlestick.UMBRELLA",
+    "body": [
+      "ICandlestick.UMBRELLA"
+    ],
+    "description": "e2l's script ICandlestick.UMBRELLA=8;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlestick.INUMBRELLA": {
+    "prefix": "ICandlestick.INUMBRELLA",
+    "body": [
+      "ICandlestick.INUMBRELLA"
+    ],
+    "description": "e2l's script ICandlestick.INUMBRELLA=9;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlestick.DOJI": {
+    "prefix": "ICandlestick.DOJI",
+    "body": [
+      "ICandlestick.DOJI"
+    ],
+    "description": "e2l's script ICandlestick.DOJI=10;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlestick.LONG_DOJI": {
+    "prefix": "ICandlestick.LONG_DOJI",
+    "body": [
+      "ICandlestick.LONG_DOJI"
+    ],
+    "description": "e2l's script ICandlestick.LONG_DOJI=11;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlestick.FOUR_DOJI": {
+    "prefix": "ICandlestick.FOUR_DOJI",
+    "body": [
+      "ICandlestick.FOUR_DOJI"
+    ],
+    "description": "e2l's script ICandlestick.FOUR_DOJI=12;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.hanging_man": {
+    "prefix": "IBearlish.hanging_man",
+    "body": [
+      "IBearlish.hanging_man"
+    ],
+    "description": "e2l's script IBearlish.hanging_man = 1;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.belt_hold": {
+    "prefix": "IBearlish.belt_hold",
+    "body": [
+      "IBearlish.belt_hold"
+    ],
+    "description": "e2l's script IBearlish.belt_hold = 2;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.engulfing": {
+    "prefix": "IBearlish.engulfing",
+    "body": [
+      "IBearlish.engulfing"
+    ],
+    "description": "e2l's script IBearlish.engulfing = 3;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.harami": {
+    "prefix": "IBearlish.harami",
+    "body": [
+      "IBearlish.harami"
+    ],
+    "description": "e2l's script IBearlish.harami = 4;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.harami_cross": {
+    "prefix": "IBearlish.harami_cross",
+    "body": [
+      "IBearlish.harami_cross"
+    ],
+    "description": "e2l's script IBearlish.harami_cross = 5;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.shooting_star": {
+    "prefix": "IBearlish.shooting_star",
+    "body": [
+      "IBearlish.shooting_star"
+    ],
+    "description": "e2l's script IBearlish.shooting_star = 6;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.dark_cloud_cover": {
+    "prefix": "IBearlish.dark_cloud_cover",
+    "body": [
+      "IBearlish.dark_cloud_cover"
+    ],
+    "description": "e2l's script IBearlish.dark_cloud_cover = 7;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.doji_star": {
+    "prefix": "IBearlish.doji_star",
+    "body": [
+      "IBearlish.doji_star"
+    ],
+    "description": "e2l's script IBearlish.doji_star = 8;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.meeting_line": {
+    "prefix": "IBearlish.meeting_line",
+    "body": [
+      "IBearlish.meeting_line"
+    ],
+    "description": "e2l's script IBearlish.meeting_line = 9;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.descending_hawk": {
+    "prefix": "IBearlish.descending_hawk",
+    "body": [
+      "IBearlish.descending_hawk"
+    ],
+    "description": "e2l's script IBearlish.descending_hawk = 10;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.matching_high": {
+    "prefix": "IBearlish.matching_high",
+    "body": [
+      "IBearlish.matching_high"
+    ],
+    "description": "e2l's script IBearlish.matching_high = 11;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.kicking": {
+    "prefix": "IBearlish.kicking",
+    "body": [
+      "IBearlish.kicking"
+    ],
+    "description": "e2l's script IBearlish.kicking = 12;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.one_black_crow": {
+    "prefix": "IBearlish.one_black_crow",
+    "body": [
+      "IBearlish.one_black_crow"
+    ],
+    "description": "e2l's script IBearlish.one_black_crow = 13;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.evening_star": {
+    "prefix": "IBearlish.evening_star",
+    "body": [
+      "IBearlish.evening_star"
+    ],
+    "description": "e2l's script IBearlish.evening_star = 14;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.evening_doji_star": {
+    "prefix": "IBearlish.evening_doji_star",
+    "body": [
+      "IBearlish.evening_doji_star"
+    ],
+    "description": "e2l's script IBearlish.evening_doji_star = 15;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.abandoned_baby": {
+    "prefix": "IBearlish.abandoned_baby",
+    "body": [
+      "IBearlish.abandoned_baby"
+    ],
+    "description": "e2l's script IBearlish.abandoned_baby = 16;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.tri_star": {
+    "prefix": "IBearlish.tri_star",
+    "body": [
+      "IBearlish.tri_star"
+    ],
+    "description": "e2l's script IBearlish.tri_star = 17;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.upside_gap_two_crows": {
+    "prefix": "IBearlish.upside_gap_two_crows",
+    "body": [
+      "IBearlish.upside_gap_two_crows"
+    ],
+    "description": "e2l's script IBearlish.upside_gap_two_crows = 18;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.unique_three_mountain_top": {
+    "prefix": "IBearlish.unique_three_mountain_top",
+    "body": [
+      "IBearlish.unique_three_mountain_top"
+    ],
+    "description": "e2l's script IBearlish.unique_three_mountain_top = 19;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.three_black_crows": {
+    "prefix": "IBearlish.three_black_crows",
+    "body": [
+      "IBearlish.three_black_crows"
+    ],
+    "description": "e2l's script IBearlish.three_black_crows = 20;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.advance_block": {
+    "prefix": "IBearlish.advance_block",
+    "body": [
+      "IBearlish.advance_block"
+    ],
+    "description": "e2l's script IBearlish.advance_block = 21;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.deliberation_block": {
+    "prefix": "IBearlish.deliberation_block",
+    "body": [
+      "IBearlish.deliberation_block"
+    ],
+    "description": "e2l's script IBearlish.deliberation_block = 22;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.two_crows": {
+    "prefix": "IBearlish.two_crows",
+    "body": [
+      "IBearlish.two_crows"
+    ],
+    "description": "e2l's script IBearlish.two_crows = 23;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.three_inside_down": {
+    "prefix": "IBearlish.three_inside_down",
+    "body": [
+      "IBearlish.three_inside_down"
+    ],
+    "description": "e2l's script IBearlish.three_inside_down = 24;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.three_outside_down": {
+    "prefix": "IBearlish.three_outside_down",
+    "body": [
+      "IBearlish.three_outside_down"
+    ],
+    "description": "e2l's script IBearlish.three_outside_down = 25;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.squeeze_alert": {
+    "prefix": "IBearlish.squeeze_alert",
+    "body": [
+      "IBearlish.squeeze_alert"
+    ],
+    "description": "e2l's script IBearlish.squeeze_alert = 26;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.three_gap_ups": {
+    "prefix": "IBearlish.three_gap_ups",
+    "body": [
+      "IBearlish.three_gap_ups"
+    ],
+    "description": "e2l's script IBearlish.three_gap_ups = 27;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.breakaway": {
+    "prefix": "IBearlish.breakaway",
+    "body": [
+      "IBearlish.breakaway"
+    ],
+    "description": "e2l's script IBearlish.breakaway = 28;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.ladder_top": {
+    "prefix": "IBearlish.ladder_top",
+    "body": [
+      "IBearlish.ladder_top"
+    ],
+    "description": "e2l's script IBearlish.ladder_top = 29;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.after_top_gap_down": {
+    "prefix": "IBearlish.after_top_gap_down",
+    "body": [
+      "IBearlish.after_top_gap_down"
+    ],
+    "description": "e2l's script IBearlish.after_top_gap_down = 30;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBearlish.stop_loss": {
+    "prefix": "IBearlish.stop_loss",
+    "body": [
+      "IBearlish.stop_loss"
+    ],
+    "description": "e2l's script IBearlish.stop_loss = 31;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.hammer": {
+    "prefix": "IBullish.hammer",
+    "body": [
+      "IBullish.hammer"
+    ],
+    "description": "e2l's script IBullish.hammer = 1;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.belt_hold": {
+    "prefix": "IBullish.belt_hold",
+    "body": [
+      "IBullish.belt_hold"
+    ],
+    "description": "e2l's script IBullish.belt_hold = 2;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.engulfing": {
+    "prefix": "IBullish.engulfing",
+    "body": [
+      "IBullish.engulfing"
+    ],
+    "description": "e2l's script IBullish.engulfing = 3;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.harami": {
+    "prefix": "IBullish.harami",
+    "body": [
+      "IBullish.harami"
+    ],
+    "description": "e2l's script IBullish.harami = 4;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.harami_cross": {
+    "prefix": "IBullish.harami_cross",
+    "body": [
+      "IBullish.harami_cross"
+    ],
+    "description": "e2l's script IBullish.harami_cross = 5;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.inverted_hammer": {
+    "prefix": "IBullish.inverted_hammer",
+    "body": [
+      "IBullish.inverted_hammer"
+    ],
+    "description": "e2l's script IBullish.inverted_hammer=6;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.piercing_line": {
+    "prefix": "IBullish.piercing_line",
+    "body": [
+      "IBullish.piercing_line"
+    ],
+    "description": "e2l's script IBullish.piercing_line = 7;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.doji_star": {
+    "prefix": "IBullish.doji_star",
+    "body": [
+      "IBullish.doji_star"
+    ],
+    "description": "e2l's script IBullish.doji_star = 8;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.meeting_line": {
+    "prefix": "IBullish.meeting_line",
+    "body": [
+      "IBullish.meeting_line"
+    ],
+    "description": "e2l's script IBullish.meeting_line = 9;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.homing_pigeon": {
+    "prefix": "IBullish.homing_pigeon",
+    "body": [
+      "IBullish.homing_pigeon"
+    ],
+    "description": "e2l's script IBullish.homing_pigeon = 10;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.matching_low": {
+    "prefix": "IBullish.matching_low",
+    "body": [
+      "IBullish.matching_low"
+    ],
+    "description": "e2l's script IBullish.matching_low = 11;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.kicking": {
+    "prefix": "IBullish.kicking",
+    "body": [
+      "IBullish.kicking"
+    ],
+    "description": "e2l's script IBullish.kicking = 12;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.one_white_soldier": {
+    "prefix": "IBullish.one_white_soldier",
+    "body": [
+      "IBullish.one_white_soldier"
+    ],
+    "description": "e2l's script IBullish.one_white_soldier = 13;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.morning_star": {
+    "prefix": "IBullish.morning_star",
+    "body": [
+      "IBullish.morning_star"
+    ],
+    "description": "e2l's script IBullish.morning_star = 14;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.morning_doji_star": {
+    "prefix": "IBullish.morning_doji_star",
+    "body": [
+      "IBullish.morning_doji_star"
+    ],
+    "description": "e2l's script IBullish.morning_doji_star = 15;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.abandoned_baby": {
+    "prefix": "IBullish.abandoned_baby",
+    "body": [
+      "IBullish.abandoned_baby"
+    ],
+    "description": "e2l's script IBullish.abandoned_baby = 16;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.tri_star": {
+    "prefix": "IBullish.tri_star",
+    "body": [
+      "IBullish.tri_star"
+    ],
+    "description": "e2l's script IBullish.tri_star = 17;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.downside_gap_two_rabbits": {
+    "prefix": "IBullish.downside_gap_two_rabbits",
+    "body": [
+      "IBullish.downside_gap_two_rabbits"
+    ],
+    "description": "e2l's script IBullish.downside_gap_two_rabbits = 18;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.unique_three_river_bottom": {
+    "prefix": "IBullish.unique_three_river_bottom",
+    "body": [
+      "IBullish.unique_three_river_bottom"
+    ],
+    "description": "e2l's script IBullish.unique_three_river_bottom = 19;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.three_white_soldiers": {
+    "prefix": "IBullish.three_white_soldiers",
+    "body": [
+      "IBullish.three_white_soldiers"
+    ],
+    "description": "e2l's script IBullish.three_white_soldiers = 20;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.descent_block": {
+    "prefix": "IBullish.descent_block",
+    "body": [
+      "IBullish.descent_block"
+    ],
+    "description": "e2l's script IBullish.descent_block = 21;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.deliberation_block": {
+    "prefix": "IBullish.deliberation_block",
+    "body": [
+      "IBullish.deliberation_block"
+    ],
+    "description": "e2l's script IBullish.deliberation_block = 22;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.two_rabbits": {
+    "prefix": "IBullish.two_rabbits",
+    "body": [
+      "IBullish.two_rabbits"
+    ],
+    "description": "e2l's script IBullish.two_rabbits = 23;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.three_inside_up": {
+    "prefix": "IBullish.three_inside_up",
+    "body": [
+      "IBullish.three_inside_up"
+    ],
+    "description": "e2l's script IBullish.three_inside_up = 24;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.three_outside_up": {
+    "prefix": "IBullish.three_outside_up",
+    "body": [
+      "IBullish.three_outside_up"
+    ],
+    "description": "e2l's script IBullish.three_outside_up = 25;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.three_stars_in_the_south": {
+    "prefix": "IBullish.three_stars_in_the_south",
+    "body": [
+      "IBullish.three_stars_in_the_south"
+    ],
+    "description": "e2l's script IBullish.three_stars_in_the_south = 26;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.stick_sandwich": {
+    "prefix": "IBullish.stick_sandwich",
+    "body": [
+      "IBullish.stick_sandwich"
+    ],
+    "description": "e2l's script IBullish.stick_sandwich = 27;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.squeeze_alert": {
+    "prefix": "IBullish.squeeze_alert",
+    "body": [
+      "IBullish.squeeze_alert"
+    ],
+    "description": "e2l's script IBullish.squeeze_alert = 28;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.three_gap_downs": {
+    "prefix": "IBullish.three_gap_downs",
+    "body": [
+      "IBullish.three_gap_downs"
+    ],
+    "description": "e2l's script IBullish.three_gap_downs = 29;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.concealing_baby_swallow": {
+    "prefix": "IBullish.concealing_baby_swallow",
+    "body": [
+      "IBullish.concealing_baby_swallow"
+    ],
+    "description": "e2l's script IBullish.concealing_baby_swallow = 30;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.breakaway": {
+    "prefix": "IBullish.breakaway",
+    "body": [
+      "IBullish.breakaway"
+    ],
+    "description": "e2l's script IBullish.breakaway = 31;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.ladder_bottom": {
+    "prefix": "IBullish.ladder_bottom",
+    "body": [
+      "IBullish.ladder_bottom"
+    ],
+    "description": "e2l's script IBullish.ladder_bottom = 32;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.after_bottom_gap_up": {
+    "prefix": "IBullish.after_bottom_gap_up",
+    "body": [
+      "IBullish.after_bottom_gap_up"
+    ],
+    "description": "e2l's script IBullish.after_bottom_gap_up = 33;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "IBullish.stop_loss": {
+    "prefix": "IBullish.stop_loss",
+    "body": [
+      "IBullish.stop_loss"
+    ],
+    "description": "e2l's script IBullish.stop_loss = 34;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlesId.element": {
+    "prefix": "ICandlesId.element",
+    "body": [
+      "ICandlesId.element"
+    ],
+    "description": "e2l's script ICandlesId.element = 111000;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlesId.ele_size": {
+    "prefix": "ICandlesId.ele_size",
+    "body": [
+      "ICandlesId.ele_size"
+    ],
+    "description": "e2l's script ICandlesId.ele_size = 8;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlesId.body": {
+    "prefix": "ICandlesId.body",
+    "body": [
+      "ICandlesId.body"
+    ],
+    "description": "e2l's script ICandlesId.body = 111001;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlesId.shadow": {
+    "prefix": "ICandlesId.shadow",
+    "body": [
+      "ICandlesId.shadow"
+    ],
+    "description": "e2l's script ICandlesId.shadow = 111002;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlesId.shape": {
+    "prefix": "ICandlesId.shape",
+    "body": [
+      "ICandlesId.shape"
+    ],
+    "description": "e2l's script ICandlesId.shape = 111003;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlesId.bearlish_bullish": {
+    "prefix": "ICandlesId.bearlish_bullish",
+    "body": [
+      "ICandlesId.bearlish_bullish"
+    ],
+    "description": "e2l's script ICandlesId.bearlish_bullish = 111004;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlesId.id": {
+    "prefix": "ICandlesId.id",
+    "body": [
+      "ICandlesId.id"
+    ],
+    "description": "e2l's script ICandlesId.id = 111005;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlesId.stop_price": {
+    "prefix": "ICandlesId.stop_price",
+    "body": [
+      "ICandlesId.stop_price"
+    ],
+    "description": "e2l's script ICandlesId.stop_price = 111006;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "ICandlesId.size": {
+    "prefix": "ICandlesId.size",
+    "body": [
+      "ICandlesId.size"
+    ],
+    "description": "e2l's script ICandlesId.size = 1;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "bbStatus.none": {
+    "prefix": "bbStatus.none",
+    "body": [
+      "bbStatus.none"
+    ],
+    "description": "e2l's script bbStatus.none = 0;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "bbStatus.bearlish": {
+    "prefix": "bbStatus.bearlish",
+    "body": [
+      "bbStatus.bearlish"
+    ],
+    "description": "e2l's script bbStatus.bearlish = 1;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "bbStatus.bullish": {
+    "prefix": "bbStatus.bullish",
+    "body": [
+      "bbStatus.bullish"
+    ],
+    "description": "e2l's script bbStatus.bullish = 2;,\t\n  ./quant/Indicators/Candlesticker/CandlesUnion.e2"
+  },
+  "OnLineMarket.id": {
+    "prefix": "OnLineMarket.id",
+    "body": [
+      "OnLineMarket.id"
+    ],
+    "description": "e2l's script OnLineMarket.id = 101090;,\t\n  ./oms/risk.e2"
+  },
+  "OnLineMarket.size": {
+    "prefix": "OnLineMarket.size",
+    "body": [
+      "OnLineMarket.size"
+    ],
+    "description": "e2l's script OnLineMarket.size = 1;,\t\n  ./oms/risk.e2"
+  },
+  "UAnaly.AvgDrawdown": {
+    "prefix": "UAnaly.AvgDrawdown",
+    "body": [
+      "UAnaly.AvgDrawdown"
+    ],
+    "description": "e2l's script UAnaly.AvgDrawdown = 16;,\t\n  ./global.e2"
+  },
+  "UAnaly.AvgDrawdownDuration": {
+    "prefix": "UAnaly.AvgDrawdownDuration",
+    "body": [
+      "UAnaly.AvgDrawdownDuration"
+    ],
+    "description": "e2l's script UAnaly.AvgDrawdownDuration = 18;,\t\n  ./global.e2"
+  },
+  "UAnaly.AvgTrade": {
+    "prefix": "UAnaly.AvgTrade",
+    "body": [
+      "UAnaly.AvgTrade"
+    ],
+    "description": "e2l's script UAnaly.AvgTrade = 22;,\t\n  ./global.e2"
+  },
+  "UAnaly.AvgTradeDuration": {
+    "prefix": "UAnaly.AvgTradeDuration",
+    "body": [
+      "UAnaly.AvgTradeDuration"
+    ],
+    "description": "e2l's script UAnaly.AvgTradeDuration = 24;,\t\n  ./global.e2"
+  },
+  "UAnaly.BestTrade": {
+    "prefix": "UAnaly.BestTrade",
+    "body": [
+      "UAnaly.BestTrade"
+    ],
+    "description": "e2l's script UAnaly.BestTrade = 20;,\t\n  ./global.e2"
+  },
+  "UAnaly.BuyAndHold": {
+    "prefix": "UAnaly.BuyAndHold",
+    "body": [
+      "UAnaly.BuyAndHold"
+    ],
+    "description": "e2l's script UAnaly.BuyAndHold = 9;,\t\n  ./global.e2"
+  },
+  "UAnaly.CalmarRatio": {
+    "prefix": "UAnaly.CalmarRatio",
+    "body": [
+      "UAnaly.CalmarRatio"
+    ],
+    "description": "e2l's script UAnaly.CalmarRatio = 14;,\t\n  ./global.e2"
+  },
+  "UAnaly.Cash": {
+    "prefix": "UAnaly.Cash",
+    "body": [
+      "UAnaly.Cash"
+    ],
+    "description": "e2l's script UAnaly.Cash = 1;,\t\n  ./global.e2"
+  },
+  "UAnaly.Curve": {
+    "prefix": "UAnaly.Curve",
+    "body": [
+      "UAnaly.Curve"
+    ],
+    "description": "e2l's script UAnaly.Curve = 29;,\t\n  ./global.e2"
+  },
+  "UAnaly.Duration": {
+    "prefix": "UAnaly.Duration",
+    "body": [
+      "UAnaly.Duration"
+    ],
+    "description": "e2l's script UAnaly.Duration = 4;,\t\n  ./global.e2"
+  },
+  "UAnaly.End": {
+    "prefix": "UAnaly.End",
+    "body": [
+      "UAnaly.End"
+    ],
+    "description": "e2l's script UAnaly.End = 3;,\t\n  ./global.e2"
+  },
+  "UAnaly.EquityFinal": {
+    "prefix": "UAnaly.EquityFinal",
+    "body": [
+      "UAnaly.EquityFinal"
+    ],
+    "description": "e2l's script UAnaly.EquityFinal = 6;,\t\n  ./global.e2"
+  },
+  "UAnaly.EquityPeak": {
+    "prefix": "UAnaly.EquityPeak",
+    "body": [
+      "UAnaly.EquityPeak"
+    ],
+    "description": "e2l's script UAnaly.EquityPeak = 7;,\t\n  ./global.e2"
+  },
+  "UAnaly.Expectancy": {
+    "prefix": "UAnaly.Expectancy",
+    "body": [
+      "UAnaly.Expectancy"
+    ],
+    "description": "e2l's script UAnaly.Expectancy = 26;,\t\n  ./global.e2"
+  },
+  "UAnaly.ExposureTime": {
+    "prefix": "UAnaly.ExposureTime",
+    "body": [
+      "UAnaly.ExposureTime"
+    ],
+    "description": "e2l's script UAnaly.ExposureTime = 5;,\t\n  ./global.e2"
+  },
+  "UAnaly.Id": {
+    "prefix": "UAnaly.Id",
+    "body": [
+      "UAnaly.Id"
+    ],
+    "description": "e2l's script UAnaly.Id = 0;,\t\n  ./global.e2"
+  },
+  "UAnaly.KellyCriterion": {
+    "prefix": "UAnaly.KellyCriterion",
+    "body": [
+      "UAnaly.KellyCriterion"
+    ],
+    "description": "e2l's script UAnaly.KellyCriterion = 28;,\t\n  ./global.e2"
+  },
+  "UAnaly.MaxDrawdown": {
+    "prefix": "UAnaly.MaxDrawdown",
+    "body": [
+      "UAnaly.MaxDrawdown"
+    ],
+    "description": "e2l's script UAnaly.MaxDrawdown = 15;,\t\n  ./global.e2"
+  },
+  "UAnaly.MaxDrawdownDuration": {
+    "prefix": "UAnaly.MaxDrawdownDuration",
+    "body": [
+      "UAnaly.MaxDrawdownDuration"
+    ],
+    "description": "e2l's script UAnaly.MaxDrawdownDuration = 17;,\t\n  ./global.e2"
+  },
+  "UAnaly.MaxTradeDuration": {
+    "prefix": "UAnaly.MaxTradeDuration",
+    "body": [
+      "UAnaly.MaxTradeDuration"
+    ],
+    "description": "e2l's script UAnaly.MaxTradeDuration = 23;,\t\n  ./global.e2"
+  },
+  "UAnaly.ProfitFactor": {
+    "prefix": "UAnaly.ProfitFactor",
+    "body": [
+      "UAnaly.ProfitFactor"
+    ],
+    "description": "e2l's script UAnaly.ProfitFactor = 25;,\t\n  ./global.e2"
+  },
+  "UAnaly.Return": {
+    "prefix": "UAnaly.Return",
+    "body": [
+      "UAnaly.Return"
+    ],
+    "description": "e2l's script UAnaly.Return = 8;,\t\n  ./global.e2"
+  },
+  "UAnaly.ReturnAnn": {
+    "prefix": "UAnaly.ReturnAnn",
+    "body": [
+      "UAnaly.ReturnAnn"
+    ],
+    "description": "e2l's script UAnaly.ReturnAnn = 10;,\t\n  ./global.e2"
+  },
+  "UAnaly.SQN": {
+    "prefix": "UAnaly.SQN",
+    "body": [
+      "UAnaly.SQN"
+    ],
+    "description": "e2l's script UAnaly.SQN = 27;,\t\n  ./global.e2"
+  },
+  "UAnaly.SharpeRatio": {
+    "prefix": "UAnaly.SharpeRatio",
+    "body": [
+      "UAnaly.SharpeRatio"
+    ],
+    "description": "e2l's script UAnaly.SharpeRatio = 12;,\t\n  ./global.e2"
+  },
+  "UAnaly.SortinoRatio": {
+    "prefix": "UAnaly.SortinoRatio",
+    "body": [
+      "UAnaly.SortinoRatio"
+    ],
+    "description": "e2l's script UAnaly.SortinoRatio = 13;,\t\n  ./global.e2"
+  },
+  "UAnaly.Start": {
+    "prefix": "UAnaly.Start",
+    "body": [
+      "UAnaly.Start"
+    ],
+    "description": "e2l's script UAnaly.Start = 2;,\t\n  ./global.e2"
+  },
+  "UAnaly.VolatilityAnn": {
+    "prefix": "UAnaly.VolatilityAnn",
+    "body": [
+      "UAnaly.VolatilityAnn"
+    ],
+    "description": "e2l's script UAnaly.VolatilityAnn = 11;,\t\n  ./global.e2"
+  },
+  "UAnaly.WinRate": {
+    "prefix": "UAnaly.WinRate",
+    "body": [
+      "UAnaly.WinRate"
+    ],
+    "description": "e2l's script UAnaly.WinRate = 19;,\t\n  ./global.e2"
+  },
+  "UAnaly.WorstTrade": {
+    "prefix": "UAnaly.WorstTrade",
+    "body": [
+      "UAnaly.WorstTrade"
+    ],
+    "description": "e2l's script UAnaly.WorstTrade = 21;,\t\n  ./global.e2"
+  },
+  "UBarType.MODE_CLOSE": {
+    "prefix": "UBarType.MODE_CLOSE",
+    "body": [
+      "UBarType.MODE_CLOSE"
+    ],
+    "description": "e2l's script UBarType.MODE_CLOSE = 4;,\t\n  ./global.e2"
+  },
+  "UBarType.MODE_HIGH": {
+    "prefix": "UBarType.MODE_HIGH",
+    "body": [
+      "UBarType.MODE_HIGH"
+    ],
+    "description": "e2l's script UBarType.MODE_HIGH = 2;,\t\n  ./global.e2"
+  },
+  "UBarType.MODE_LOW": {
+    "prefix": "UBarType.MODE_LOW",
+    "body": [
+      "UBarType.MODE_LOW"
+    ],
+    "description": "e2l's script UBarType.MODE_LOW = 3;,\t\n  ./global.e2"
+  },
+  "UBarType.MODE_OPEN": {
+    "prefix": "UBarType.MODE_OPEN",
+    "body": [
+      "UBarType.MODE_OPEN"
+    ],
+    "description": "e2l's script UBarType.MODE_OPEN = 1;,\t\n  ./global.e2"
+  },
+  "UBarType.MODE_TIME": {
+    "prefix": "UBarType.MODE_TIME",
+    "body": [
+      "UBarType.MODE_TIME"
+    ],
+    "description": "e2l's script UBarType.MODE_TIME = 0;,\t\n  ./global.e2"
+  },
+  "UBarType.MODE_VOL": {
+    "prefix": "UBarType.MODE_VOL",
+    "body": [
+      "UBarType.MODE_VOL"
+    ],
+    "description": "e2l's script UBarType.MODE_VOL = 5;,\t\n  ./global.e2"
+  },
+  "UBool.B_FALSE": {
+    "prefix": "UBool.B_FALSE",
+    "body": [
+      "UBool.B_FALSE"
+    ],
+    "description": "e2l's script UBool.B_FALSE = 1;,\t\n  ./global.e2"
+  },
+  "UBool.B_TRUE": {
+    "prefix": "UBool.B_TRUE",
+    "body": [
+      "UBool.B_TRUE"
+    ],
+    "description": "e2l's script UBool.B_TRUE = 0;,\t\n  ./global.e2"
+  },
+  "UCommit.Pass": {
+    "prefix": "UCommit.Pass",
+    "body": [
+      "UCommit.Pass"
+    ],
+    "description": "e2l's script UCommit.Pass = 0;,\t\n  ./global.e2"
+  },
+  "UCommit.Reject": {
+    "prefix": "UCommit.Reject",
+    "body": [
+      "UCommit.Reject"
+    ],
+    "description": "e2l's script UCommit.Reject = 1;,\t\n  ./global.e2"
+  },
+  "UCommit.Restate": {
+    "prefix": "UCommit.Restate",
+    "body": [
+      "UCommit.Restate"
+    ],
+    "description": "e2l's script UCommit.Restate = 2;,\t\n  ./global.e2"
+  },
+  "UExecInst.Ei_All_Or_None": {
+    "prefix": "UExecInst.Ei_All_Or_None",
+    "body": [
+      "UExecInst.Ei_All_Or_None"
+    ],
+    "description": "e2l's script UExecInst.Ei_All_Or_None = 2;,\t\n  ./global.e2"
+  },
+  "UExecInst.Ei_Do_Not_Increase": {
+    "prefix": "UExecInst.Ei_Do_Not_Increase",
+    "body": [
+      "UExecInst.Ei_Do_Not_Increase"
+    ],
+    "description": "e2l's script UExecInst.Ei_Do_Not_Increase = 0;,\t\n  ./global.e2"
+  },
+  "UExecInst.Ei_Do_Not_Reduce": {
+    "prefix": "UExecInst.Ei_Do_Not_Reduce",
+    "body": [
+      "UExecInst.Ei_Do_Not_Reduce"
+    ],
+    "description": "e2l's script UExecInst.Ei_Do_Not_Reduce = 1;,\t\n  ./global.e2"
+  },
+  "UExecType.Canceled": {
+    "prefix": "UExecType.Canceled",
+    "body": [
+      "UExecType.Canceled"
+    ],
+    "description": "e2l's script UExecType.Canceled = 4;,\t\n  ./global.e2"
+  },
+  "UExecType.Done_For_The_Day": {
+    "prefix": "UExecType.Done_For_The_Day",
+    "body": [
+      "UExecType.Done_For_The_Day"
+    ],
+    "description": "e2l's script UExecType.Done_For_The_Day = 3;,\t\n  ./global.e2"
+  },
+  "UExecType.Expired": {
+    "prefix": "UExecType.Expired",
+    "body": [
+      "UExecType.Expired"
+    ],
+    "description": "e2l's script UExecType.Expired = 12;,\t\n  ./global.e2"
+  },
+  "UExecType.NewOrder": {
+    "prefix": "UExecType.NewOrder",
+    "body": [
+      "UExecType.NewOrder"
+    ],
+    "description": "e2l's script UExecType.NewOrder = 0;,\t\n  ./global.e2"
+  },
+  "UExecType.Pending_New": {
+    "prefix": "UExecType.Pending_New",
+    "body": [
+      "UExecType.Pending_New"
+    ],
+    "description": "e2l's script UExecType.Pending_New = 10;,\t\n  ./global.e2"
+  },
+  "UExecType.Pending_Replace": {
+    "prefix": "UExecType.Pending_Replace",
+    "body": [
+      "UExecType.Pending_Replace"
+    ],
+    "description": "e2l's script UExecType.Pending_Replace = 14;,\t\n  ./global.e2"
+  },
+  "UExecType.Rejected": {
+    "prefix": "UExecType.Rejected",
+    "body": [
+      "UExecType.Rejected"
+    ],
+    "description": "e2l's script UExecType.Rejected = 8;,\t\n  ./global.e2"
+  },
+  "UExecType.Replaced": {
+    "prefix": "UExecType.Replaced",
+    "body": [
+      "UExecType.Replaced"
+    ],
+    "description": "e2l's script UExecType.Replaced = 5;,\t\n  ./global.e2"
+  },
+  "UExecType.Restated": {
+    "prefix": "UExecType.Restated",
+    "body": [
+      "UExecType.Restated"
+    ],
+    "description": "e2l's script UExecType.Restated = 13;,\t\n  ./global.e2"
+  },
+  "UExecType.Stopped": {
+    "prefix": "UExecType.Stopped",
+    "body": [
+      "UExecType.Stopped"
+    ],
+    "description": "e2l's script UExecType.Stopped = 6;,\t\n  ./global.e2"
+  },
+  "UExecType.Trade": {
+    "prefix": "UExecType.Trade",
+    "body": [
+      "UExecType.Trade"
+    ],
+    "description": "e2l's script UExecType.Trade = 15;,\t\n  ./global.e2"
+  },
+  "UExecType.Trade_Cancel": {
+    "prefix": "UExecType.Trade_Cancel",
+    "body": [
+      "UExecType.Trade_Cancel"
+    ],
+    "description": "e2l's script UExecType.Trade_Cancel = 17;,\t\n  ./global.e2"
+  },
+  "UExecType.Trade_Correct": {
+    "prefix": "UExecType.Trade_Correct",
+    "body": [
+      "UExecType.Trade_Correct"
+    ],
+    "description": "e2l's script UExecType.Trade_Correct = 16;,\t\n  ./global.e2"
+  },
+  "UExecType.Trigerred_Activated": {
+    "prefix": "UExecType.Trigerred_Activated",
+    "body": [
+      "UExecType.Trigerred_Activated"
+    ],
+    "description": "e2l's script UExecType.Trigerred_Activated = 21;,\t\n  ./global.e2"
+  },
+  "UExecType.UNKONWN": {
+    "prefix": "UExecType.UNKONWN",
+    "body": [
+      "UExecType.UNKONWN"
+    ],
+    "description": "e2l's script UExecType.UNKONWN = 99;,\t\n  ./global.e2"
+  },
+  "UInitOk.I_OK": {
+    "prefix": "UInitOk.I_OK",
+    "body": [
+      "UInitOk.I_OK"
+    ],
+    "description": "e2l's script UInitOk.I_OK = 1;,\t\n  ./global.e2"
+  },
+  "UInitOk.I_Proc": {
+    "prefix": "UInitOk.I_Proc",
+    "body": [
+      "UInitOk.I_Proc"
+    ],
+    "description": "e2l's script UInitOk.I_Proc = 0;,\t\n  ./global.e2"
+  },
+  "UOMSRisk.I_OMS": {
+    "prefix": "UOMSRisk.I_OMS",
+    "body": [
+      "UOMSRisk.I_OMS"
+    ],
+    "description": "e2l's script UOMSRisk.I_OMS = 0;,\t\n  ./global.e2"
+  },
+  "UOMSRisk.I_RISK": {
+    "prefix": "UOMSRisk.I_RISK",
+    "body": [
+      "UOMSRisk.I_RISK"
+    ],
+    "description": "e2l's script UOMSRisk.I_RISK = 1;,\t\n  ./global.e2"
+  },
+  "ULineState.L_Dotted": {
+    "prefix": "ULineState.L_Dotted",
+    "body": [
+      "ULineState.L_Dotted"
+    ],
+    "description": "e2l's script ULineState.L_Dotted = 0;,\t\n  ./global.e2"
+  },
+  "ULineState.L_Solid": {
+    "prefix": "ULineState.L_Solid",
+    "body": [
+      "ULineState.L_Solid"
+    ],
+    "description": "e2l's script ULineState.L_Solid = 1;,\t\n  ./global.e2"
+  },
+  "UMKType.Mk_Bar": {
+    "prefix": "UMKType.Mk_Bar",
+    "body": [
+      "UMKType.Mk_Bar"
+    ],
+    "description": "e2l's script UMKType.Mk_Bar = 3;,\t\n  ./global.e2"
+  },
+  "UMKType.Mk_Csv": {
+    "prefix": "UMKType.Mk_Csv",
+    "body": [
+      "UMKType.Mk_Csv"
+    ],
+    "description": "e2l's script UMKType.Mk_Csv = 0;,\t\n  ./global.e2"
+  },
+  "UMKType.Mk_Kafka": {
+    "prefix": "UMKType.Mk_Kafka",
+    "body": [
+      "UMKType.Mk_Kafka"
+    ],
+    "description": "e2l's script UMKType.Mk_Kafka = 1;,\t\n  ./global.e2"
+  },
+  "UMKType.Mk_Tick": {
+    "prefix": "UMKType.Mk_Tick",
+    "body": [
+      "UMKType.Mk_Tick"
+    ],
+    "description": "e2l's script UMKType.Mk_Tick = 2;,\t\n  ./global.e2"
+  },
+  "UNumber.NaN": {
+    "prefix": "UNumber.NaN",
+    "body": [
+      "UNumber.NaN"
+    ],
+    "description": "e2l's script UNumber.NaN = 0;,\t\n  ./global.e2"
+  },
+  "UOffers.OF_Index": {
+    "prefix": "UOffers.OF_Index",
+    "body": [
+      "UOffers.OF_Index"
+    ],
+    "description": "e2l's script UOffers.OF_Index = 0;,\t\n  ./global.e2"
+  },
+  "UOffers.OF_Tick": {
+    "prefix": "UOffers.OF_Tick",
+    "body": [
+      "UOffers.OF_Tick"
+    ],
+    "description": "e2l's script UOffers.OF_Tick = 1;,\t\n  ./global.e2"
+  },
+  "UOrdStatus.Ost_Accepted_For_Bidding": {
+    "prefix": "UOrdStatus.Ost_Accepted_For_Bidding",
+    "body": [
+      "UOrdStatus.Ost_Accepted_For_Bidding"
+    ],
+    "description": "e2l's script UOrdStatus.Ost_Accepted_For_Bidding = 68;,\t\n  ./global.e2"
+  },
+  "UOrdStatus.Ost_Calculated": {
+    "prefix": "UOrdStatus.Ost_Calculated",
+    "body": [
+      "UOrdStatus.Ost_Calculated"
+    ],
+    "description": "e2l's script UOrdStatus.Ost_Calculated = 66;,\t\n  ./global.e2"
+  },
+  "UOrdStatus.Ost_Canceled": {
+    "prefix": "UOrdStatus.Ost_Canceled",
+    "body": [
+      "UOrdStatus.Ost_Canceled"
+    ],
+    "description": "e2l's script UOrdStatus.Ost_Canceled = 4;,\t\n  ./global.e2"
+  },
+  "UOrdStatus.Ost_Done_For_Day": {
+    "prefix": "UOrdStatus.Ost_Done_For_Day",
+    "body": [
+      "UOrdStatus.Ost_Done_For_Day"
+    ],
+    "description": "e2l's script UOrdStatus.Ost_Done_For_Day = 3;,\t\n  ./global.e2"
+  },
+  "UOrdStatus.Ost_Expired": {
+    "prefix": "UOrdStatus.Ost_Expired",
+    "body": [
+      "UOrdStatus.Ost_Expired"
+    ],
+    "description": "e2l's script UOrdStatus.Ost_Expired = 67;,\t\n  ./global.e2"
+  },
+  "UOrdStatus.Ost_Filled": {
+    "prefix": "UOrdStatus.Ost_Filled",
+    "body": [
+      "UOrdStatus.Ost_Filled"
+    ],
+    "description": "e2l's script UOrdStatus.Ost_Filled = 2;,\t\n  ./global.e2"
+  },
+  "UOrdStatus.Ost_New": {
+    "prefix": "UOrdStatus.Ost_New",
+    "body": [
+      "UOrdStatus.Ost_New"
+    ],
+    "description": "e2l's script UOrdStatus.Ost_New = 0;,\t\n  ./global.e2"
+  },
+  "UOrdStatus.Ost_Partially_Filled": {
+    "prefix": "UOrdStatus.Ost_Partially_Filled",
+    "body": [
+      "UOrdStatus.Ost_Partially_Filled"
+    ],
+    "description": "e2l's script UOrdStatus.Ost_Partially_Filled = 1;,\t\n  ./global.e2"
+  },
+  "UOrdStatus.Ost_Pending_Cancel": {
+    "prefix": "UOrdStatus.Ost_Pending_Cancel",
+    "body": [
+      "UOrdStatus.Ost_Pending_Cancel"
+    ],
+    "description": "e2l's script UOrdStatus.Ost_Pending_Cancel = 6;,\t\n  ./global.e2"
+  },
+  "UOrdStatus.Ost_Pending_New": {
+    "prefix": "UOrdStatus.Ost_Pending_New",
+    "body": [
+      "UOrdStatus.Ost_Pending_New"
+    ],
+    "description": "e2l's script UOrdStatus.Ost_Pending_New = 65;,\t\n  ./global.e2"
+  },
+  "UOrdStatus.Ost_Pending_Replace": {
+    "prefix": "UOrdStatus.Ost_Pending_Replace",
+    "body": [
+      "UOrdStatus.Ost_Pending_Replace"
+    ],
+    "description": "e2l's script UOrdStatus.Ost_Pending_Replace = 69;,\t\n  ./global.e2"
+  },
+  "UOrdStatus.Ost_Rejected": {
+    "prefix": "UOrdStatus.Ost_Rejected",
+    "body": [
+      "UOrdStatus.Ost_Rejected"
+    ],
+    "description": "e2l's script UOrdStatus.Ost_Rejected = 8;,\t\n  ./global.e2"
+  },
+  "UOrdStatus.Ost_Replaced": {
+    "prefix": "UOrdStatus.Ost_Replaced",
+    "body": [
+      "UOrdStatus.Ost_Replaced"
+    ],
+    "description": "e2l's script UOrdStatus.Ost_Replaced = 5;,\t\n  ./global.e2"
+  },
+  "UOrdStatus.Ost_Stopped": {
+    "prefix": "UOrdStatus.Ost_Stopped",
+    "body": [
+      "UOrdStatus.Ost_Stopped"
+    ],
+    "description": "e2l's script UOrdStatus.Ost_Stopped = 7;,\t\n  ./global.e2"
+  },
+  "UOrdStatus.Ost_Suspended": {
+    "prefix": "UOrdStatus.Ost_Suspended",
+    "body": [
+      "UOrdStatus.Ost_Suspended"
+    ],
+    "description": "e2l's script UOrdStatus.Ost_Suspended = 9;,\t\n  ./global.e2"
+  },
+  "UOrdType.Ot_Limit": {
+    "prefix": "UOrdType.Ot_Limit",
+    "body": [
+      "UOrdType.Ot_Limit"
+    ],
+    "description": "e2l's script UOrdType.Ot_Limit = 2;,\t\n  ./global.e2"
+  },
+  "UOrdType.Ot_Market": {
+    "prefix": "UOrdType.Ot_Market",
+    "body": [
+      "UOrdType.Ot_Market"
+    ],
+    "description": "e2l's script UOrdType.Ot_Market = 1;,\t\n  ./global.e2"
+  },
+  "UOrdType.Ot_Stop": {
+    "prefix": "UOrdType.Ot_Stop",
+    "body": [
+      "UOrdType.Ot_Stop"
+    ],
+    "description": "e2l's script UOrdType.Ot_Stop = 3;,\t\n  ./global.e2"
+  },
+  "UOrdType.Ot_Stop_limit": {
+    "prefix": "UOrdType.Ot_Stop_limit",
+    "body": [
+      "UOrdType.Ot_Stop_limit"
+    ],
+    "description": "e2l's script UOrdType.Ot_Stop_limit = 4;,\t\n  ./global.e2"
+  },
+  "USelectFlag.F_ByPos": {
+    "prefix": "USelectFlag.F_ByPos",
+    "body": [
+      "USelectFlag.F_ByPos"
+    ],
+    "description": "e2l's script USelectFlag.F_ByPos = 0;,\t\n  ./global.e2"
+  },
+  "USelectFlag.F_ByTicket": {
+    "prefix": "USelectFlag.F_ByTicket",
+    "body": [
+      "USelectFlag.F_ByTicket"
+    ],
+    "description": "e2l's script USelectFlag.F_ByTicket = 1;,\t\n  ./global.e2"
+  },
+  "USelectFlag.P_History": {
+    "prefix": "USelectFlag.P_History",
+    "body": [
+      "USelectFlag.P_History"
+    ],
+    "description": "e2l's script USelectFlag.P_History = 3;,\t\n  ./global.e2"
+  },
+  "USelectFlag.P_Trade": {
+    "prefix": "USelectFlag.P_Trade",
+    "body": [
+      "USelectFlag.P_Trade"
+    ],
+    "description": "e2l's script USelectFlag.P_Trade = 2;,\t\n  ./global.e2"
+  },
+  "USide.Os_Buy": {
+    "prefix": "USide.Os_Buy",
+    "body": [
+      "USide.Os_Buy"
+    ],
+    "description": "e2l's script USide.Os_Buy = 1;,\t\n  ./global.e2"
+  },
+  "USide.Os_Sell": {
+    "prefix": "USide.Os_Sell",
+    "body": [
+      "USide.Os_Sell"
+    ],
+    "description": "e2l's script USide.Os_Sell = 2;,\t\n  ./global.e2"
+  },
+  "USymbolTradeMode.M_CloseOnly": {
+    "prefix": "USymbolTradeMode.M_CloseOnly",
+    "body": [
+      "USymbolTradeMode.M_CloseOnly"
+    ],
+    "description": "e2l's script USymbolTradeMode.M_CloseOnly = 3;,\t\n  ./global.e2"
+  },
+  "USymbolTradeMode.M_Disabled": {
+    "prefix": "USymbolTradeMode.M_Disabled",
+    "body": [
+      "USymbolTradeMode.M_Disabled"
+    ],
+    "description": "e2l's script USymbolTradeMode.M_Disabled = 0;,\t\n  ./global.e2"
+  },
+  "USymbolTradeMode.M_Full": {
+    "prefix": "USymbolTradeMode.M_Full",
+    "body": [
+      "USymbolTradeMode.M_Full"
+    ],
+    "description": "e2l's script USymbolTradeMode.M_Full = 4;,\t\n  ./global.e2"
+  },
+  "USymbolTradeMode.M_LongOnly": {
+    "prefix": "USymbolTradeMode.M_LongOnly",
+    "body": [
+      "USymbolTradeMode.M_LongOnly"
+    ],
+    "description": "e2l's script USymbolTradeMode.M_LongOnly = 1;,\t\n  ./global.e2"
+  },
+  "USymbolTradeMode.M_ShortOnly": {
+    "prefix": "USymbolTradeMode.M_ShortOnly",
+    "body": [
+      "USymbolTradeMode.M_ShortOnly"
+    ],
+    "description": "e2l's script USymbolTradeMode.M_ShortOnly = 2;,\t\n  ./global.e2"
+  },
+  "UTimeFrames.Period_Current": {
+    "prefix": "UTimeFrames.Period_Current",
+    "body": [
+      "UTimeFrames.Period_Current"
+    ],
+    "description": "e2l's script UTimeFrames.Period_Current = 0;,\t\n  ./global.e2"
+  },
+  "UTimeFrames.Period_D1": {
+    "prefix": "UTimeFrames.Period_D1",
+    "body": [
+      "UTimeFrames.Period_D1"
+    ],
+    "description": "e2l's script UTimeFrames.Period_D1 = 1440;,\t\n  ./global.e2"
+  },
+  "UTimeFrames.Period_H1": {
+    "prefix": "UTimeFrames.Period_H1",
+    "body": [
+      "UTimeFrames.Period_H1"
+    ],
+    "description": "e2l's script UTimeFrames.Period_H1 = 60;,\t\n  ./global.e2"
+  },
+  "UTimeFrames.Period_H4": {
+    "prefix": "UTimeFrames.Period_H4",
+    "body": [
+      "UTimeFrames.Period_H4"
+    ],
+    "description": "e2l's script UTimeFrames.Period_H4 = 240;,\t\n  ./global.e2"
+  },
+  "UTimeFrames.Period_M": {
+    "prefix": "UTimeFrames.Period_M",
+    "body": [
+      "UTimeFrames.Period_M"
+    ],
+    "description": "e2l's script UTimeFrames.Period_M = 5;,\t\n  ./global.e2"
+  },
+  "UTimeFrames.Period_M1": {
+    "prefix": "UTimeFrames.Period_M1",
+    "body": [
+      "UTimeFrames.Period_M1"
+    ],
+    "description": "e2l's script UTimeFrames.Period_M1 = 1;,\t\n  ./global.e2"
+  },
+  "UTimeFrames.Period_M15": {
+    "prefix": "UTimeFrames.Period_M15",
+    "body": [
+      "UTimeFrames.Period_M15"
+    ],
+    "description": "e2l's script UTimeFrames.Period_M15 = 15;,\t\n  ./global.e2"
+  },
+  "UTimeFrames.Period_M30": {
+    "prefix": "UTimeFrames.Period_M30",
+    "body": [
+      "UTimeFrames.Period_M30"
+    ],
+    "description": "e2l's script UTimeFrames.Period_M30 = 30;,\t\n  ./global.e2"
+  },
+  "UTimeFrames.Period_MN1": {
+    "prefix": "UTimeFrames.Period_MN1",
+    "body": [
+      "UTimeFrames.Period_MN1"
+    ],
+    "description": "e2l's script UTimeFrames.Period_MN1 = 43200;,\t\n  ./global.e2"
+  },
+  "UTimeFrames.Period_W1": {
+    "prefix": "UTimeFrames.Period_W1",
+    "body": [
+      "UTimeFrames.Period_W1"
+    ],
+    "description": "e2l's script UTimeFrames.Period_W1 = 10080;,\t\n  ./global.e2"
+  },
+  "UTimeInForce.Tif_At_The_Close": {
+    "prefix": "UTimeInForce.Tif_At_The_Close",
+    "body": [
+      "UTimeInForce.Tif_At_The_Close"
+    ],
+    "description": "e2l's script UTimeInForce.Tif_At_The_Close = 7;,\t\n  ./global.e2"
+  },
+  "UTimeInForce.Tif_At_The_Opening": {
+    "prefix": "UTimeInForce.Tif_At_The_Opening",
+    "body": [
+      "UTimeInForce.Tif_At_The_Opening"
+    ],
+    "description": "e2l's script UTimeInForce.Tif_At_The_Opening = 2;,\t\n  ./global.e2"
+  },
+  "UTimeInForce.Tif_Day": {
+    "prefix": "UTimeInForce.Tif_Day",
+    "body": [
+      "UTimeInForce.Tif_Day"
+    ],
+    "description": "e2l's script UTimeInForce.Tif_Day = 0;,\t\n  ./global.e2"
+  },
+  "UTimeInForce.Tif_Fill_Or_Kill": {
+    "prefix": "UTimeInForce.Tif_Fill_Or_Kill",
+    "body": [
+      "UTimeInForce.Tif_Fill_Or_Kill"
+    ],
+    "description": "e2l's script UTimeInForce.Tif_Fill_Or_Kill = 4;,\t\n  ./global.e2"
+  },
+  "UTimeInForce.Tif_Good_Till_Cancel": {
+    "prefix": "UTimeInForce.Tif_Good_Till_Cancel",
+    "body": [
+      "UTimeInForce.Tif_Good_Till_Cancel"
+    ],
+    "description": "e2l's script UTimeInForce.Tif_Good_Till_Cancel = 1;,\t\n  ./global.e2"
+  },
+  "UTimeInForce.Tif_Good_Till_Crossing": {
+    "prefix": "UTimeInForce.Tif_Good_Till_Crossing",
+    "body": [
+      "UTimeInForce.Tif_Good_Till_Crossing"
+    ],
+    "description": "e2l's script UTimeInForce.Tif_Good_Till_Crossing = 5;,\t\n  ./global.e2"
+  },
+  "UTimeInForce.Tif_Good_Till_Date": {
+    "prefix": "UTimeInForce.Tif_Good_Till_Date",
+    "body": [
+      "UTimeInForce.Tif_Good_Till_Date"
+    ],
+    "description": "e2l's script UTimeInForce.Tif_Good_Till_Date = 6;,\t\n  ./global.e2"
+  },
+  "UTimeInForce.Tif_Immediate_Or_Cancel": {
+    "prefix": "UTimeInForce.Tif_Immediate_Or_Cancel",
+    "body": [
+      "UTimeInForce.Tif_Immediate_Or_Cancel"
+    ],
+    "description": "e2l's script UTimeInForce.Tif_Immediate_Or_Cancel = 3;,\t\n  ./global.e2"
+  },
+  "USettleInstMode.S_Settle": {
+    "prefix": "USettleInstMode.S_Settle",
+    "body": [
+      "USettleInstMode.S_Settle"
+    ],
+    "description": "e2l's script USettleInstMode.S_Settle = 0;,\t\n  ./global.e2"
+  },
+  "USettleInstMode.S_Settle_Balance": {
+    "prefix": "USettleInstMode.S_Settle_Balance",
+    "body": [
+      "USettleInstMode.S_Settle_Balance"
+    ],
+    "description": "e2l's script USettleInstMode.S_Settle_Balance = 1;,\t\n  ./global.e2"
+  },
+  "USettleInstMode.S_Observer": {
+    "prefix": "USettleInstMode.S_Observer",
+    "body": [
+      "USettleInstMode.S_Observer"
+    ],
+    "description": "e2l's script USettleInstMode.S_Observer = 2;,\t\n  ./global.e2"
+  },
+  "UOrderEvent.Oe_Compleate": {
+    "prefix": "UOrderEvent.Oe_Compleate",
+    "body": [
+      "UOrderEvent.Oe_Compleate"
+    ],
+    "description": "e2l's script UOrderEvent.Oe_Compleate = 0;,\t\n  ./global.e2"
+  },
+  "UOrderEvent.Oe_StopLoss": {
+    "prefix": "UOrderEvent.Oe_StopLoss",
+    "body": [
+      "UOrderEvent.Oe_StopLoss"
+    ],
+    "description": "e2l's script UOrderEvent.Oe_StopLoss = 1;,\t\n  ./global.e2"
+  },
+  "UOrderEvent.Oe_TakeProfit": {
+    "prefix": "UOrderEvent.Oe_TakeProfit",
+    "body": [
+      "UOrderEvent.Oe_TakeProfit"
+    ],
+    "description": "e2l's script UOrderEvent.Oe_TakeProfit =2;,\t\n  ./global.e2"
+  },
+  "UMatchEvent.ME_OrderIn": {
+    "prefix": "UMatchEvent.ME_OrderIn",
+    "body": [
+      "UMatchEvent.ME_OrderIn"
+    ],
+    "description": "e2l's script UMatchEvent.ME_OrderIn = 0;,\t\n  ./global.e2"
+  },
+  "UMatchEvent.ME_Open": {
+    "prefix": "UMatchEvent.ME_Open",
+    "body": [
+      "UMatchEvent.ME_Open"
+    ],
+    "description": "e2l's script UMatchEvent.ME_Open = 1;,\t\n  ./global.e2"
+  },
+  "UMatchEvent.ME_Close": {
+    "prefix": "UMatchEvent.ME_Close",
+    "body": [
+      "UMatchEvent.ME_Close"
+    ],
+    "description": "e2l's script UMatchEvent.ME_Close = 2;,\t\n  ./global.e2"
+  },
+  "UBookType.ABook": {
+    "prefix": "UBookType.ABook",
+    "body": [
+      "UBookType.ABook"
+    ],
+    "description": "e2l's script UBookType.ABook = 0;,\t\n  ./global.e2"
+  },
+  "UBookType.BBook": {
+    "prefix": "UBookType.BBook",
+    "body": [
+      "UBookType.BBook"
+    ],
+    "description": "e2l's script UBookType.BBook = 1;,\t\n  ./global.e2"
+  }
+}
